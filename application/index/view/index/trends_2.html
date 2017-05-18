@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>动态</title>
+		<link rel="stylesheet" href="__CSS__/bootstrap.min.css" />
+		<link rel="stylesheet" href="__CSS__/trends.css" />
+
+	</head>
+
+	<body class="home-template">
+		<header class="main-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<img src="__IMG__/1.jpg" />
+					</div>
+
+				</div>
+			</div>
+		</header>
+		<!--包含inedx头部-->
+		{include file="index/header" /}
+		<section class="main-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+							<ul id="myTab" class="nav nav-pills  nav-justified">
+								<li>
+									<a href="{:url('Index/trends_1')}">动态</a>
+								</li>
+								<li class="active">
+									<a href="{:url('Index/trends_2')}">文章</a>
+								</li>
+								<li>
+									<a href="{:url('Index/trends_3')}">项目</a>
+								</li>
+								<li>
+									<a href="{:url('Index/trends_4')}">公告</a>
+								</li>
+							</ul>
+						<div class="tab-content">
+							<div class="tab-pane fade in active" id="wenzhang">
+								<ul class="information">
+									{foreach $essays as $essay}
+									<li>
+										<a href="{:url('Read/index').'?type=essay&id='.$essay['id']}">{$essay.name}</a>
+											<span>{$essay.publish_date}</span>
+									</li>
+									{/foreach}
+								</ul>
+							</div>
+							{$essays->render()}
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<footer class="foot">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<span>&copy;2017-物联网工作室&nbsp;</span>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<script type="text/javascript" src="__JS__/jquery.min.js" ></script>
+		<script type="text/javascript" src="__JS__/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="__JS__/jquery.js"></script>
+	</body>
+</html>

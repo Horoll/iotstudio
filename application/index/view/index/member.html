@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>工作室成员</title>
+		<link rel="stylesheet" href="__CSS__/bootstrap.min.css" />
+		<link rel="stylesheet" href="__CSS__/people.css">
+
+	</head>
+
+	<body>
+		<header class="main-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<img src="__IMG__/1.jpg" />
+					</div>
+
+				</div>
+			</div>
+		</header>
+		<!--包含inedx头部-->
+		{include file="index/header" /}
+		<div class="box">
+			<ul class="people">
+				{foreach $members as $member}
+				{php}
+				$pic_dir=$member['pic_dir'];
+				$pic_dir=str_replace('\\','/',$pic_dir);
+				{/php}
+				<li>
+					<a id="{$member.id}" class='normal' href='#' style="background:url(__MEMBER__/{$pic_dir}); background-size: 100% 100%;"></a>
+					<div class="info">
+						<h3>{$member.name}</h3>
+						<p>{$member.text}</p>
+					</div>
+				</li>
+				{/foreach}
+			</ul>
+		</div>
+		<footer class="foot">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<span> &copy;2017-物联网工作室&nbsp;</span>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="__JS__/jquery.min.js"></script>
+		<script type="text/javascript" src="__JS__/bootstrap.min.js"></script>
+		<script src="__JS__/people.js"></script>
+	</body>
+
+</html>
