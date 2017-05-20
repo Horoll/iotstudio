@@ -47,7 +47,7 @@ function type($type){
 * @param string $file_url 文件路径
 * @param string $new_name 新的文件名（默认为原名）
 * @return string
-    */
+*/
 function download($file_url,$new_name=''){
     if(!isset($file_url)||trim($file_url)==''){
         return '500';
