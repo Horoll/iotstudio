@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:72:"D:\wamp64\www\project\iotstudio/application/index\view\cms\addTrend.html";i:1493963488;s:70:"D:\wamp64\www\project\iotstudio/application/index\view\cms\header.html";i:1493992943;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:72:"D:\wamp64\www\project\iotstudio/application/index\view\cms\addTrend.html";i:1493963488;s:70:"D:\wamp64\www\project\iotstudio/application/index\view\cms\header.html";i:1494165839;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -39,9 +39,9 @@
                 </li>
                 <li><a href="#">项目管理</a>
                 </li>
-                <li><a href="#">公告设置</a>
+                <li><a href="<?php echo url('Cms/notice'); ?>">公告设置</a>
                 </li>
-                <li><a href="#">成员管理</a>
+                <li><a href="<?php echo url('Cms/member'); ?>">成员管理</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">

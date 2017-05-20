@@ -115,6 +115,7 @@ body {
 }
 
 .introduce .introduce-content {
+	min-height: 275px;
 	font-size: large;
 }
 

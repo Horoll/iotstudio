@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>发表</title>
+
+    <link href="__CSS__/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="__CSS__/cms.css" />
+    <link rel="stylesheet" type="text/css" href="__CSS__/simditor.css" />
+    <link rel="stylesheet" type="text/css" href="__CSS__/sweetalert.css" />
+</head>
+
+<body>
+<!--包含cms头部-->
+{include file="cms/header" /}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2">
+            <a href="#" class="list-group-item active">发表管理</a>
+            <a href="#" class="list-group-item disabled">所有发表</a>
+            <a href="{:url('Cms/add').'?type=publication'}" class="list-group-item">添加发表</a>
+        </div>
+        <div class="col-sm-10">
+            <ol class="breadcrumb">
+                <li class="active">发表管理
+                </li>
+                <li class="active">所有发表
+                </li>
+            </ol>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    所有发表
+                </div>
+                <div class="panel panel-default table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>编号</th>
+                            <th>名称</th>
+                            <th>简介</th>
+                            <th>查看</th>
+                            <th>修改</th>
+                            <th>删除</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            {foreach $publications as $publication}
+                            <tr>
+                                {foreach $publication as $name=>$cell}
+                                <?php if($name == 'file_dir'){
+                                            continue;
+                                        }elseif($name == 'file_name'){
+                                            continue;
+                                        }
+                                 ?>
+                                <td>{$cell}</td>
+                                {/foreach}
+                                <td>
+                                    <a href="{:url('Read/index').'?type=publication&id='.$publication['id']}" class="table-btn"><span class="glyphicon glyphicon-eye-open"></span></a>
+                                </td>
+                                <td>
+                                    <a href="{:url('Cms/change').'?type=publication&id='.$publication['id']}" class="table-btn"><span class="glyphicon glyphicon-edit"></span></a>
+                                </td>
+                                <td>
+                                    <a href="#" class="table-btn delete-btn" id="{$publication.id}"><span class="glyphicon glyphicon-trash"></span></a>
+                                </td>
+                            </tr>
+                            {/foreach}
+                        </tbody>
+                    </table>
+                    {$publications->render()}
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<footer class="foot">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <span> &copy;2017-物联网工作室&nbsp;</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="__JS__/jquery.min.js"></script>
+<script src="__JS__/bootstrap.min.js"></script>
+<script src="__JS__/sweetalert.js"></script>
+<script>
+    post_data = 't='+Math.random()+'&type=publication&id=';
+    post_url = "{:url('cms/delete')}"
+</script>
+<script src="__JS__/delete.js"></script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:71:"D:\wamp64\www\project\iotstudio/application/index\view\index\index.html";i:1494170088;s:72:"D:\wamp64\www\project\iotstudio/application/index\view\index\header.html";i:1493965941;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:71:"D:\wamp64\www\project\iotstudio/application/index\view\index\index.html";i:1495202655;s:72:"D:\wamp64\www\project\iotstudio/application/index\view\index\header.html";i:1495190566;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-cn">
 
@@ -51,7 +51,11 @@
 			</div>
 		</header>
 		<!--包含inedx头部-->
-		<nav class="main-navigation navbar-default">
+		<script>
+    var authInfo = '作者：\nHorol & Shy\n联系方式：qq 640246255';
+    console.info(authInfo);
+</script>
+<nav class="main-navigation navbar-default">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -66,19 +70,22 @@
                 <div class="collapse navbar-collapse" id="main-menu">
                     <ul class="menu">
                         <li role="presentation">
-                            <a href="<?php echo url('Index/index'); ?>">首页</a>
+                            <a href="<?php echo url('Index/index'); ?>">Home</a>
                         </li>
                         <li role="presentation">
-                            <a href="<?php echo url('Index/trends_1'); ?>">动态</a>
+                            <a href="<?php echo url('Index/trends_1'); ?>">Trend</a>
                         </li>
                         <li role="presentation">
-                            <a href="<?php echo url('Index/member'); ?>">成员</a>
+                            <a href="<?php echo url('Index/member'); ?>">Member</a>
                         </li>
                         <li role="presentation">
-                            <a href="#">项目</a>
+                            <a href="#">Publications</a>
                         </li>
                         <li role="presentation">
-                            <a href="#">关于我们</a>
+                            <a href="#">Courses</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -114,9 +121,6 @@
 							<div class="introduce-content">
 								<p>这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍</p>
 								<p>这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍</p>
-								<p>这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍</p>
-								<p>这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍这是对工作室的介绍</p>
-
 							</div>
 						</article>
 					</div>

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:76:"D:\wamp64\www\project\iotstudio/application/index\view\cms\changeMember.html";i:1494332182;s:70:"D:\wamp64\www\project\iotstudio/application/index\view\cms\header.html";i:1494165839;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:76:"D:\wamp64\www\project\iotstudio/application/index\view\cms\changeMember.html";i:1495204189;s:70:"D:\wamp64\www\project\iotstudio/application/index\view\cms\header.html";i:1495203267;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -33,11 +33,15 @@
                 </li>
                 <li><a href="<?php echo url('Cms/essay'); ?>">文章管理</a>
                 </li>
-                <li><a href="#">项目管理</a>
+                <li><a href="<?php echo url('Cms/course'); ?>">课程管理</a>
+                </li>
+                <li><a href="<?php echo url('Cms/publication'); ?>">发表管理</a>
                 </li>
                 <li><a href="<?php echo url('Cms/notice'); ?>">公告设置</a>
                 </li>
                 <li><a href="<?php echo url('Cms/member'); ?>">成员管理</a>
+                </li>
+                <li><a href="<?php echo url('Cms/member'); ?>">网站设置</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -71,7 +75,7 @@
 							添加
 						</div>
 						<div class="panel-body">
-							<form role="form" action="<?php echo url('Cms/updateMember'); ?>" method="post" enctype="multipart/form-data">
+							<form role="form" action="<?php echo url('Cms/updateResource'); ?>" method="post" enctype="multipart/form-data">
 								<input type="hidden" name="id" value="<?php echo $data['id']; ?>">
 								<div class="form-group">
 									<label for="name">成员姓名：</label>
@@ -83,7 +87,7 @@
 								</div>
 								<div class="form-group kv-avatar center-block">
 									<label for="name">成员照片：</label>
-									<input id="input-6" name="image[]" type="file" class="file-loading">
+									<input id="input-6" name="file[]" type="file" class="file-loading">
 								</div>
 								<p class="submit-p">
 									<button type="submit" class="btn btn-danger" id="btnSubmit">提交</button>
@@ -104,8 +108,8 @@
 			</div>
 		</footer>
 		<?php 
-				$pic_dir=$data['pic_dir'];
-				$pic_dir=str_replace('\\','/',$pic_dir);
+				$file_dir=$data['file_dir'];
+				$file_dir=str_replace('\\','/',$file_dir);
 		 ?>
 	<script>
         $("#input-6").fileinput({
@@ -120,7 +124,7 @@
             removeTitle: '撤销该照片',
             elErrorContainer: '#kv-avatar-errors-1',
             msgErrorClass: 'alert alert-block alert-danger',
-            defaultPreviewContent: '<img src="__MEMBER__/<?php echo $pic_dir; ?>" style="width:160px">',
+            defaultPreviewContent: '<img src="__MEMBER__/<?php echo $file_dir; ?>" style="width:160px">',
             layoutTemplates: {main2: '{preview} {remove} {browse}'},
             allowedFileExtensions: ["jpg", "png", "gif"]
         });

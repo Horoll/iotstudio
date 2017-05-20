@@ -72,4 +72,11 @@ class Index extends Controller
         cookie('admin',null);
         $this->success('注销成功','Index/index');
     }
+
+    //文件下载
+    public function download(){
+        $file_dir = ROOT_PATH.'public/static/'.input('file_dir');
+        $file_name = input('file_name');
+        download($file_dir,$file_name);
+    }
 }

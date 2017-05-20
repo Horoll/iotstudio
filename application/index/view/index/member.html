@@ -27,11 +27,11 @@
 			<ul class="people">
 				{foreach $members as $member}
 				{php}
-				$pic_dir=$member['pic_dir'];
-				$pic_dir=str_replace('\\','/',$pic_dir);
+				$file_dir=$member['file_dir'];
+				$file_dir=str_replace('\\','/',$file_dir);
 				{/php}
 				<li>
-					<a id="{$member.id}" class='normal' href='#' style="background:url(__MEMBER__/{$pic_dir}); background-size: 100% 100%;"></a>
+					<a id="{$member.id}" class='normal' href='#' style="background:url(__MEMBER__/{$file_dir}); background-size: 100% 100%;"></a>
 					<div class="info">
 						<h3>{$member.name}</h3>
 						<p>{$member.text}</p>

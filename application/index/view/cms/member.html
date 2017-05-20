@@ -50,7 +50,9 @@
                             {foreach $members as $member}
                             <tr>
                                 {foreach $member as $name=>$cell}
-                                <?php if($name == 'pic_dir'){
+                                <?php if($name == 'file_dir'){
+                                            continue;
+                                        }elseif($name == 'file_name'){
                                             continue;
                                         }
                                  ?>

@@ -39,7 +39,7 @@
 							添加
 						</div>
 						<div class="panel-body">
-							<form role="form" action="{:url('Cms/updateMember')}" method="post" enctype="multipart/form-data">
+							<form role="form" action="{:url('Cms/updateResource')}" method="post" enctype="multipart/form-data">
 								<input type="hidden" name="id" value="{$data.id}">
 								<div class="form-group">
 									<label for="name">成员姓名：</label>
@@ -51,7 +51,7 @@
 								</div>
 								<div class="form-group kv-avatar center-block">
 									<label for="name">成员照片：</label>
-									<input id="input-6" name="image[]" type="file" class="file-loading">
+									<input id="input-6" name="file[]" type="file" class="file-loading">
 								</div>
 								<p class="submit-p">
 									<button type="submit" class="btn btn-danger" id="btnSubmit">提交</button>
@@ -72,8 +72,8 @@
 			</div>
 		</footer>
 		{php}
-				$pic_dir=$data['pic_dir'];
-				$pic_dir=str_replace('\\','/',$pic_dir);
+				$file_dir=$data['file_dir'];
+				$file_dir=str_replace('\\','/',$file_dir);
 		{/php}
 	<script>
         $("#input-6").fileinput({
@@ -88,7 +88,7 @@
             removeTitle: '撤销该照片',
             elErrorContainer: '#kv-avatar-errors-1',
             msgErrorClass: 'alert alert-block alert-danger',
-            defaultPreviewContent: '<img src="__MEMBER__/{$pic_dir}" style="width:160px">',
+            defaultPreviewContent: '<img src="__MEMBER__/{$file_dir}" style="width:160px">',
             layoutTemplates: {main2: '{preview} {remove} {browse}'},
             allowedFileExtensions: ["jpg", "png", "gif"]
         });

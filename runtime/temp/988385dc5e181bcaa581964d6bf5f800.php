@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:72:"D:\wamp64\www\project\iotstudio/application/index\view\index\member.html";i:1494332557;s:72:"D:\wamp64\www\project\iotstudio/application/index\view\index\header.html";i:1493965941;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:72:"D:\wamp64\www\project\iotstudio/application/index\view\index\member.html";i:1495201806;s:72:"D:\wamp64\www\project\iotstudio/application/index\view\index\header.html";i:1495190566;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-cn">
 
@@ -23,7 +23,11 @@
 			</div>
 		</header>
 		<!--包含inedx头部-->
-		<nav class="main-navigation navbar-default">
+		<script>
+    var authInfo = '作者：\nHorol & Shy\n联系方式：qq 640246255';
+    console.info(authInfo);
+</script>
+<nav class="main-navigation navbar-default">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -38,19 +42,22 @@
                 <div class="collapse navbar-collapse" id="main-menu">
                     <ul class="menu">
                         <li role="presentation">
-                            <a href="<?php echo url('Index/index'); ?>">首页</a>
+                            <a href="<?php echo url('Index/index'); ?>">Home</a>
                         </li>
                         <li role="presentation">
-                            <a href="<?php echo url('Index/trends_1'); ?>">动态</a>
+                            <a href="<?php echo url('Index/trends_1'); ?>">Trend</a>
                         </li>
                         <li role="presentation">
-                            <a href="<?php echo url('Index/member'); ?>">成员</a>
+                            <a href="<?php echo url('Index/member'); ?>">Member</a>
                         </li>
                         <li role="presentation">
-                            <a href="#">项目</a>
+                            <a href="#">Publications</a>
                         </li>
                         <li role="presentation">
-                            <a href="#">关于我们</a>
+                            <a href="#">Courses</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -64,11 +71,11 @@
 		<div class="box">
 			<ul class="people">
 				<?php foreach($members as $member): 
-				$pic_dir=$member['pic_dir'];
-				$pic_dir=str_replace('\\','/',$pic_dir);
+				$file_dir=$member['file_dir'];
+				$file_dir=str_replace('\\','/',$file_dir);
 				 ?>
 				<li>
-					<a id="<?php echo $member['id']; ?>" class='normal' href='#' style="background:url(__MEMBER__/<?php echo $pic_dir; ?>); background-size: 100% 100%;"></a>
+					<a id="<?php echo $member['id']; ?>" class='normal' href='#' style="background:url(__MEMBER__/<?php echo $file_dir; ?>); background-size: 100% 100%;"></a>
 					<div class="info">
 						<h3><?php echo $member['name']; ?></h3>
 						<p><?php echo $member['text']; ?></p>

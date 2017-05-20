@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:76:"D:\wamp64\www\project\iotstudio/application/index\view\cms\changeNotice.html";i:1494167252;s:70:"D:\wamp64\www\project\iotstudio/application/index\view\cms\header.html";i:1494165839;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:76:"D:\wamp64\www\project\iotstudio/application/index\view\cms\changeNotice.html";i:1494167252;s:70:"D:\wamp64\www\project\iotstudio/application/index\view\cms\header.html";i:1495191761;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -37,7 +37,9 @@
                 </li>
                 <li><a href="<?php echo url('Cms/essay'); ?>">文章管理</a>
                 </li>
-                <li><a href="#">项目管理</a>
+                <li><a href="<?php echo url('Cms/course'); ?>">课程管理</a>
+                </li>
+                <li><a href="<?php echo url('Cms/publication'); ?>">资源管理</a>
                 </li>
                 <li><a href="<?php echo url('Cms/notice'); ?>">公告设置</a>
                 </li>

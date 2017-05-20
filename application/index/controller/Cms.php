@@ -30,6 +30,20 @@ class Cms extends Controller
         return $this->fetch();
     }
 
+    //课程页面
+    public function course(){
+        $courses = db('course')->where(1)->order('id desc')->paginate(10);
+        $this->assign('courses',$courses);
+        return $this->fetch();
+    }
+
+    //发表页面
+    public function publication(){
+        $publications = db('publication')->where(1)->order('id desc')->paginate(10);
+        $this->assign('publications',$publications);
+        return $this->fetch();
+    }
+
     //公告页面
     public function notice(){
         $notices = db('notice')->where(1)->order('id desc')->paginate(10);
@@ -135,16 +149,17 @@ class Cms extends Controller
         }
     }
 
-    //增加、修改成员
-    public function updateMember(){
+    //增加、修改成员/资源/课程
+    public function updateResource(){
         $data = array();
         // 获取表单上传文件
-        $files = request()->file('image');
-
+        $files = request()->file('file');
+        $type = input('type');
         foreach ($files as $file){
-            $info = $file->move(ROOT_PATH . 'public' . DS . 'static/member');
+            $info = $file->move(ROOT_PATH . 'public' . DS . 'static/'.$type);
             if($info){
-                $data['pic_dir']=$info->getSaveName();
+                $data['file_dir']=$info->getSaveName();
+                $data['file_name']=$_FILES['file']['name'][0];
             }else{
                 // 上传失败获取错误信息
                 $this->errot($file->getError());
@@ -158,10 +173,10 @@ class Cms extends Controller
         if(!$validate->check($data)){
             $this->error($validate->getError());
         }
-        $member=model('member');
+        $member=model($type);
         if(input('?id')){
             if($member->allowField(true)->save($data,['id'=>input('id')])){
-                $this->success('修改成功','Cms/member');
+                $this->success('修改成功','Cms/'.$type);
             }else{
                 $this->error('修改失败');
             }
@@ -169,7 +184,7 @@ class Cms extends Controller
             //新增
             $member->data($data);
             if($member->save()){
-                $this->success('添加成功','Cms/member');
+                $this->success('添加成功','Cms/'.$type);
             }else{
                 $this->error('添加失败');
             }
