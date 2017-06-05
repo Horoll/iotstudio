@@ -40,6 +40,7 @@
 						</div>
 						<div class="panel-body">
 							<form role="form" action="{:url('Cms/updateResource')}" method="post" enctype="multipart/form-data">
+								<input type="hidden" name="type" value="member">
 								<input type="hidden" name="id" value="{$data.id}">
 								<div class="form-group">
 									<label for="name">成员姓名：</label>

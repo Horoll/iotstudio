@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:76:"D:\wamp64\www\project\iotstudio/application/index\view\cms\changeMember.html";i:1495204189;s:70:"D:\wamp64\www\project\iotstudio/application/index\view\cms\header.html";i:1495203267;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:76:"D:\wamp64\www\project\iotstudio/application/index\view\cms\changeMember.html";i:1496647165;s:70:"D:\wamp64\www\project\iotstudio/application/index\view\cms\header.html";i:1495203267;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -76,6 +76,7 @@
 						</div>
 						<div class="panel-body">
 							<form role="form" action="<?php echo url('Cms/updateResource'); ?>" method="post" enctype="multipart/form-data">
+								<input type="hidden" name="type" value="member">
 								<input type="hidden" name="id" value="<?php echo $data['id']; ?>">
 								<div class="form-group">
 									<label for="name">成员姓名：</label>
