@@ -50,7 +50,7 @@
                             {foreach $publications as $publication}
                             <tr>
                                 {foreach $publication as $name=>$cell}
-                                <?php if($name == 'file_dir'){
+                                <?php if($name == 'file_dir' || $name=='pic_dir' || $name=='pic_name'){
                                             continue;
                                         }elseif($name == 'file_name'){
                                             continue;

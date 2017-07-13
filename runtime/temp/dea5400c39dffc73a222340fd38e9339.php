@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:70:"D:\wamp64\www\project\iotstudio/application/index\view\Index\read.html";i:1495201664;s:72:"D:\wamp64\www\project\iotstudio/application/index\view\index\header.html";i:1495190566;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:70:"D:\wamp64\www\project\iotstudio/application/index\view\Index\read.html";i:1499943564;s:72:"D:\wamp64\www\project\iotstudio/application/index\view\index\header.html";i:1499919683;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-cn">
 
@@ -40,13 +40,10 @@
                             <a href="<?php echo url('Index/member'); ?>">Member</a>
                         </li>
                         <li role="presentation">
-                            <a href="#">Publications</a>
+                            <a href="<?php echo url('Index/publication'); ?>">Publications</a>
                         </li>
                         <li role="presentation">
-                            <a href="#">Courses</a>
-                        </li>
-                        <li role="presentation">
-                            <a href="#">Contact</a>
+                            <a href="<?php echo url('Index/course'); ?>">Courses</a>
                         </li>
                     </ul>
                 </div>
@@ -65,6 +62,7 @@
 						$data['publish_date']=isset($data['publish_date'])?$data['publish_date']:null;
 						$file_dir=isset($data['file_dir'])?$data['file_dir']:null;
 						$file_dir = str_replace('\\','/',$file_dir);
+						$pic_dir = isset($data['pic_dir'])?$data['pic_dir']:null;
 						 ?>
 						<article class="trends">
 							<h2>
@@ -87,6 +85,16 @@
 									}
 								 ?>
 								<br/><br/>
+								<?php 
+									if($_GET['type']=='publication'){
+										if($pic_dir!=null){
+											echo '<img src="__PUBLICATION__/'.$pic_dir.'" style="width:500px">';
+										}else{
+											echo '<img src="__IMG__/publication.jpg" style="width:500px">';
+										}
+									echo '<br/><br/>';
+									}
+								 ?>
 								<div class="new-txt" id="show">
 									<?php echo $data['text']; ?>
 								</div>

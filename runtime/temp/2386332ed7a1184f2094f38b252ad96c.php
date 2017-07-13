@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:78:"D:\wamp64\www\project\iotstudio/application/index\view\cms\addPublication.html";i:1495203433;s:70:"D:\wamp64\www\project\iotstudio/application/index\view\cms\header.html";i:1495203267;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:78:"D:\wamp64\www\project\iotstudio/application/index\view\cms\addPublication.html";i:1499938277;s:70:"D:\wamp64\www\project\iotstudio/application/index\view\cms\header.html";i:1495203267;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -86,6 +86,10 @@
 									<textarea class="form-control" name="text" id="txt" placeholder="请输入内容"></textarea>
 								</div>
 								<div class="form-group">
+									<label for="name">Publication封面：</label>
+									<input id="input-5" name="file[]" type="file" class="file-loading">
+								</div>
+								<div class="form-group">
 									<label for="name">上传资源：</label>
 									<input id="input-6" name="file[]" type="file" class="file-loading">
 								</div>
@@ -110,6 +114,14 @@
 		</footer>
 	<script>
         $(document).on('ready', function() {
+            $("#input-5").fileinput({
+                showUpload:false,
+                showCaption:false,
+                language: 'zh',
+                maxFileSize:5000,
+                allowedFileTypes:["image"]
+//                                                uploadUrl: "<?php echo url('Cms/updateMember'); ?>"
+            });
             $("#input-6").fileinput({
 				showUpload:false,
                 showCaption:false,

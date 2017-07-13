@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:71:"D:\wamp64\www\project\iotstudio/application/index\view\index\index.html";i:1495202655;s:72:"D:\wamp64\www\project\iotstudio/application/index\view\index\header.html";i:1495190566;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:71:"D:\wamp64\www\project\iotstudio/application/index\view\index\index.html";i:1495202655;s:72:"D:\wamp64\www\project\iotstudio/application/index\view\index\header.html";i:1499919683;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-cn">
 
@@ -79,13 +79,10 @@
                             <a href="<?php echo url('Index/member'); ?>">Member</a>
                         </li>
                         <li role="presentation">
-                            <a href="#">Publications</a>
+                            <a href="<?php echo url('Index/publication'); ?>">Publications</a>
                         </li>
                         <li role="presentation">
-                            <a href="#">Courses</a>
-                        </li>
-                        <li role="presentation">
-                            <a href="#">Contact</a>
+                            <a href="<?php echo url('Index/course'); ?>">Courses</a>
                         </li>
                     </ul>
                 </div>

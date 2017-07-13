@@ -20,6 +20,7 @@
 						$data['publish_date']=isset($data['publish_date'])?$data['publish_date']:null;
 						$file_dir=isset($data['file_dir'])?$data['file_dir']:null;
 						$file_dir = str_replace('\\','/',$file_dir);
+						$pic_dir = isset($data['pic_dir'])?$data['pic_dir']:null;
 						{/php}
 						<article class="trends">
 							<h2>
@@ -42,6 +43,16 @@
 									}
 								{/php}
 								<br/><br/>
+								{php}
+									if($_GET['type']=='publication'){
+										if($pic_dir!=null){
+											echo '<img src="__PUBLICATION__/'.$pic_dir.'" style="width:500px">';
+										}else{
+											echo '<img src="__IMG__/publication.jpg" style="width:500px">';
+										}
+									echo '<br/><br/>';
+									}
+								{/php}
 								<div class="new-txt" id="show">
 									{$data.text}
 								</div>

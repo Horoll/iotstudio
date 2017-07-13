@@ -50,6 +50,20 @@ class Index extends Controller
         return $this->fetch();
     }
 
+    public function publication(){
+        $publication = db('publication');
+        $publications = $publication->where(1)->order('id desc')->paginate(5);
+        $this->assign('publications',$publications);
+        return $this->fetch();
+    }
+
+    public function course(){
+        $course = db('course');
+        $courses = $course->where(1)->order('id desc')->paginate(5);
+        $this->assign('courses',$courses);
+        return $this->fetch();
+    }
+
     //管理员登录
     public function login(){
         if(input('?account')&&input('?password')){

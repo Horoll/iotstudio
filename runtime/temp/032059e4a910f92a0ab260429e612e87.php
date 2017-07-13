@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:81:"D:\wamp64\www\project\iotstudio/application/index\view\cms\changePublication.html";i:1495203581;s:70:"D:\wamp64\www\project\iotstudio/application/index\view\cms\header.html";i:1495203267;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:81:"D:\wamp64\www\project\iotstudio/application/index\view\cms\changePublication.html";i:1499943746;s:70:"D:\wamp64\www\project\iotstudio/application/index\view\cms\header.html";i:1495203267;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -87,7 +87,9 @@
 									<textarea class="form-control" name="text" id="txt" placeholder="请输入内容"><?php echo $data['text']; ?></textarea>
 								</div>
 								<div class="form-group kv-avatar center-block">
-									<label for="name">发表资料：</label>
+									<label for="name">Publication封面：</label>
+									<input id="input-5" name="file[]" type="file" class="file-loading">
+									<label for="name">Publication资源：</label>
 									<input id="input-6" name="file[]" type="file" class="file-loading">
 								</div>
 								<p class="submit-p">
@@ -109,10 +111,28 @@
 			</div>
 		</footer>
 		<?php 
-				$file_dir=$data['file_dir'];
-				$file_dir=str_replace('\\','/',$file_dir);
+			$file_dir=$data['file_dir'];
+			$file_dir=str_replace('\\','/',$file_dir);
+			$pic_dir=$data['pic_dir'];
+			$pic_dir=str_replace('\\','/',$pic_dir);
 		 ?>
 	<script>
+        $("#input-5").fileinput({
+            overwriteInitial: true,
+            maxFileSize: 5000,
+            showClose: false,
+            showCaption: false,
+            browseLabel: '',
+            removeLabel: '',
+            browseIcon: '<i class="glyphicon glyphicon-folder-open"></i>',
+            removeIcon: '<i class="glyphicon glyphicon-remove"></i>',
+            removeTitle: '撤销该图片',
+            elErrorContainer: '#kv-avatar-errors-1',
+            msgErrorClass: 'alert alert-block alert-danger',
+            defaultPreviewContent: '<img src="__PUBLICATION__/<?php echo $pic_dir; ?>" style="width:160px">',
+            layoutTemplates: {main2: '{preview} {remove} {browse}'},
+            allowedFileExtensions: ["jpg", "png", "gif"]
+        });
         $("#input-6").fileinput({
             overwriteInitial: true,
             maxFileSize: 5000,
@@ -122,7 +142,7 @@
             removeLabel: '',
             browseIcon: '<i class="glyphicon glyphicon-folder-open"></i>',
             removeIcon: '<i class="glyphicon glyphicon-remove"></i>',
-            removeTitle: '撤销该照片',
+            removeTitle: '撤销该文件',
             elErrorContainer: '#kv-avatar-errors-1',
             msgErrorClass: 'alert alert-block alert-danger',
             defaultPreviewContent: "<span><?php echo $data['file_name']?></span>",

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:75:"D:\wamp64\www\project\iotstudio/application/index\view\cms\publication.html";i:1495203167;s:70:"D:\wamp64\www\project\iotstudio/application/index\view\cms\header.html";i:1495203267;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:75:"D:\wamp64\www\project\iotstudio/application/index\view\cms\publication.html";i:1499939920;s:70:"D:\wamp64\www\project\iotstudio/application/index\view\cms\header.html";i:1495203267;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -85,7 +85,7 @@
                         <tbody>
                             <?php foreach($publications as $publication): ?>
                             <tr>
-                                <?php foreach($publication as $name=>$cell): if($name == 'file_dir'){
+                                <?php foreach($publication as $name=>$cell): if($name == 'file_dir' || $name=='pic_dir' || $name=='pic_name'){
                                             continue;
                                         }elseif($name == 'file_name'){
                                             continue;

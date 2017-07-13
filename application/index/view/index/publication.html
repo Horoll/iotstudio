@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>物联网工作室主页</title>
+		<link rel="stylesheet" href="__CSS__/bootstrap.min.css" />
+		<link href="__CSS__/publication.css" rel="stylesheet" />
+
+	</head>
+
+	<body>
+		<header class="main-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<img src="__IMG__/1.jpg" />
+					</div>
+
+				</div>
+			</div>
+		</header>
+		{include file="index/header" /}
+		<div class="header-1">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<span class="pub-main-title">PUBLICATIONS</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<main>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						{foreach $publications as $publication}
+						<article class="main-article">
+							{if condition="$publication.pic_dir neq null"}
+							<img class="pub-img" src="__PUBLICATION__/{$publication.pic_dir}" style="width:350px;"/>
+							{else /}
+							<img class="pub-img" src="__IMG__/publication.jpg" style="width:350px;"/>
+							{/if}
+							<div class="pub-text">
+								<div class="pub-title">
+									<h2>{$publication.name}</h2>
+									<br>
+								</div>
+								<div class="pub-main">
+									<p>{$publication.text}</p>
+									<br>
+									<a href="{:url('Index/download')}?file_name={$publication.file_name}&file_dir=publication/{$publication.file_dir}">{$publication.file_name}</a>
+								</div>
+							</div>
+						</article>
+						{/foreach}
+					</div>
+				</div>
+				{$publications->render()}
+			</div>
+
+		</main>
+		<footer class="foot">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<span> &copy;2017-物联网工作室&nbsp;<a class="glyphicon glyphicon-wrench but" href="javascript:"></a></span>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="__JS__/jquery.js"></script>
+		<script src="__JS__/jquery.min.js"></script>
+		<script type="text/javascript" src="__JS__/bootstrap.min.js"></script>
+	</body>
+
+</html>

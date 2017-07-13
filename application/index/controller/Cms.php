@@ -155,15 +155,22 @@ class Cms extends Controller
         // 获取表单上传文件
         $files = request()->file('file');
         $type = input('type');
+        $i = 1;
         foreach ($files as $file){
             $info = $file->move(ROOT_PATH . 'public' . DS . 'static/'.$type);
             if($info){
-                $data['file_dir']=$info->getSaveName();
-                $data['file_name']=$_FILES['file']['name'][0];
+                if($i==1){
+                    $data['pic_dir']=$info->getSaveName();
+                    $data['pic_name']=$_FILES['file']['name'][0];
+                }else if($i==2){
+                    $data['file_dir']=$info->getSaveName();
+                    $data['file_name']=$_FILES['file']['name'][1];
+                }
             }else{
                 // 上传失败获取错误信息
                 $this->errot($file->getError());
             }
+            $i++;
         }
         $data['id']=input('?id')?input('id'):null;
         $data['name']=input('name');

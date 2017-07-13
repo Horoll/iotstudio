@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>物联网工作室主页</title>
+		<link rel="stylesheet" href="__CSS__/bootstrap.min.css" />
+		<link href="__CSS__/course.css" rel="stylesheet" />
+
+	</head>
+
+	<body>
+		<header class="main-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<img src="__IMG__/1.jpg" />
+					</div>
+				</div>
+			</div>
+		</header>
+		{include file="index/header" /}
+		 <section>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						{foreach $courses as $course}
+						<div class="course">
+							<div class="course-title">
+								<h2>{$course.name}</h2>
+							</div>
+							<div class="course-text">
+								<p>{$course.text}</p>
+								<br>
+								<p>资源下载：</p>
+								<a href="{:url('Index/download')}?file_name={$course.file_name}&file_dir=course/{$course.file_dir}">{$course.file_name}</a>
+							</div>
+						</div>
+						{/foreach}
+					</div>
+				</div>
+				{$courses->render()}
+			</div>
+		</section>
+		<footer class="foot">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<span> &copy;2017-物联网工作室&nbsp;<a class="glyphicon glyphicon-wrench but" href="javascript:"></a></span>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="__JS__/jquery.js"></script>
+		<script src="__JS__/jquery.min.js"></script>
+		<script type="text/javascript" src="__JS__/bootstrap.min.js"></script>
+	</body>
+</html>
