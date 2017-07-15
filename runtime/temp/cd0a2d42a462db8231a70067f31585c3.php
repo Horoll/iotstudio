@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:74:"D:\wamp64\www\project\iotstudio/application/index\view\index\trends_2.html";i:1495198260;s:72:"D:\wamp64\www\project\iotstudio/application/index\view\index\header.html";i:1499919683;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:74:"D:\wamp64\www\project\iotstudio/application/index\view\index\trends_2.html";i:1500108738;s:72:"D:\wamp64\www\project\iotstudio/application/index\view\index\header.html";i:1499919683;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-cn">
 
@@ -16,7 +16,11 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<img src="__IMG__/1.jpg" />
+						<div class="header-txt">
+							<span>物联网工作室</span>
+							<p>Internet of Things Studio</p>
+						</div>
+						<img src="__IMG__/1.png" />
 					</div>
 
 				</div>
@@ -69,34 +73,36 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-							<ul id="myTab" class="nav nav-pills  nav-justified">
-								<li>
+						<div class="tab">
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs">
+								<li role="presentation">
 									<a href="<?php echo url('Index/trends_1'); ?>">Trend</a>
 								</li>
-								<li class="active">
+								<li role="presentation" class="active">
 									<a href="<?php echo url('Index/trends_2'); ?>">Essay</a>
 								</li>
-								<li>
+								<li role="presentation">
 									<a href="<?php echo url('Index/trends_4'); ?>">Notice</a>
 								</li>
 							</ul>
-						<div class="tab-content">
-							<div class="tab-pane fade in active" id="wenzhang">
-								<ul class="information">
-									<?php foreach($essays as $essay): ?>
-									<li>
-										<a href="<?php echo url('Read/index').'?type=essay&id='.$essay['id']; ?>"><?php echo $essay['name']; ?></a>
+							<div class="tab-content">
+								<div class="tab-pane fade in active" id="wenzhang">
+									<ul class="information">
+										<?php foreach($essays as $essay): ?>
+										<li>
+											<a href="<?php echo url('Read/index').'?type=essay&id='.$essay['id']; ?>"><?php echo $essay['name']; ?></a>
 											<span><?php echo $essay['publish_date']; ?></span>
-									</li>
-									<?php endforeach; ?>
-								</ul>
+										</li>
+										<?php endforeach; ?>
+									</ul>
+								</div>
+								<?php echo $essays->render(); ?>
 							</div>
-							<?php echo $essays->render(); ?>
 						</div>
 					</div>
 				</div>
 			</div>
-
 		</section>
 		<footer class="foot">
 			<div class="container">
@@ -107,9 +113,10 @@
 				</div>
 			</div>
 		</footer>
-		
-		<script type="text/javascript" src="__JS__/jquery.min.js" ></script>
-		<script type="text/javascript" src="__JS__/bootstrap.min.js" ></script>
+
+		<script type="text/javascript" src="__JS__/jquery.min.js"></script>
+		<script type="text/javascript" src="__JS__/bootstrap.min.js"></script>
 		<script type="text/javascript" src="__JS__/jquery.js"></script>
 	</body>
+
 </html>

@@ -15,7 +15,11 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<img src="__IMG__/1.jpg" />
+						<div class="header-txt">
+							<span>物联网工作室</span>
+							<p>Internet of Things Studio</p>
+						</div>
+						<img src="__IMG__/1.png" />
 					</div>
 
 				</div>
@@ -27,34 +31,36 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-							<ul id="myTab" class="nav nav-pills  nav-justified">
-								<li>
+						<div class="tab">
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs">
+								<li role="presentation">
 									<a href="{:url('Index/trends_1')}">Trend</a>
 								</li>
-								<li class="active">
+								<li role="presentation" class="active">
 									<a href="{:url('Index/trends_2')}">Essay</a>
 								</li>
-								<li>
+								<li role="presentation">
 									<a href="{:url('Index/trends_4')}">Notice</a>
 								</li>
 							</ul>
-						<div class="tab-content">
-							<div class="tab-pane fade in active" id="wenzhang">
-								<ul class="information">
-									{foreach $essays as $essay}
-									<li>
-										<a href="{:url('Read/index').'?type=essay&id='.$essay['id']}">{$essay.name}</a>
+							<div class="tab-content">
+								<div class="tab-pane fade in active" id="wenzhang">
+									<ul class="information">
+										{foreach $essays as $essay}
+										<li>
+											<a href="{:url('Read/index').'?type=essay&id='.$essay['id']}">{$essay.name}</a>
 											<span>{$essay.publish_date}</span>
-									</li>
-									{/foreach}
-								</ul>
+										</li>
+										{/foreach}
+									</ul>
+								</div>
+								{$essays->render()}
 							</div>
-							{$essays->render()}
 						</div>
 					</div>
 				</div>
 			</div>
-
 		</section>
 		<footer class="foot">
 			<div class="container">
@@ -65,9 +71,10 @@
 				</div>
 			</div>
 		</footer>
-		
-		<script type="text/javascript" src="__JS__/jquery.min.js" ></script>
-		<script type="text/javascript" src="__JS__/bootstrap.min.js" ></script>
+
+		<script type="text/javascript" src="__JS__/jquery.min.js"></script>
+		<script type="text/javascript" src="__JS__/bootstrap.min.js"></script>
 		<script type="text/javascript" src="__JS__/jquery.js"></script>
 	</body>
+
 </html>

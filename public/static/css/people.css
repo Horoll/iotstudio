@@ -16,7 +16,7 @@ li {
   left: 0;
   border-radius: 4px;
   pointer-events: none;
-  background-color: rgba(26, 188, 156, 0.9);
+  background-color: rgba(161, 205, 225, 0.8);
 }
 
 .in-top .info {
@@ -293,13 +293,17 @@ html,
 body {
 	color: #505050;
 	line-height: 1.75em;
-	background: #000000;
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#A1CDE1), to(#0C4761));
 	font-family: "微软雅黑";
 }
 
 * {
 	margin: 0;
 	padding: 0;
+}
+
+a:hover{
+	text-decoration: none;
 }
 
 h1 {
@@ -313,11 +317,32 @@ h3{
 
 .main-header {
 	text-align: center;
-	background: #000000;
+	 background: linear-gradient(to right,rgb(84,84,86) , #000); 
+}
+.header-txt{
+	float: left;
+	clear: all;
+	margin-top: 100px;
+}
+
+.header-txt span{
+	color: white;
+	font-size: 30px;
+	font-family: "楷体";
+	box-shadow: 2px 5px 15px white;
+}
+
+.header-txt p{
+	color: white;
+	font-size: 20px;
+	margin-left: 150px;
+	box-shadow: 2px 5px 15px white;
 }
 
 .main-header img {
 	max-width: 100%;
+	float: right;
+	clear: all;
 }
 
 .main-navigation {
@@ -357,12 +382,15 @@ h3{
 	padding: 0 30px;
 }
 
+.main-navigation .menu li a:hover{
+	color: paleturquoise;
+}
+
 .foot{
 	background:#000000 ;
-	margin-top: 100px;
+	margin-top: 200px;
 	color: white;
 	text-align: center;
-	border-top: 1px solid white;
 }
 
 .box{

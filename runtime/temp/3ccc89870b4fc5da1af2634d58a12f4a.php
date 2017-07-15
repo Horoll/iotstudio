@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:77:"D:\wamp64\www\project\iotstudio/application/index\view\index\publication.html";i:1499943543;s:72:"D:\wamp64\www\project\iotstudio/application/index\view\index\header.html";i:1499919683;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:77:"D:\wamp64\www\project\iotstudio/application/index\view\index\publication.html";i:1500118042;s:72:"D:\wamp64\www\project\iotstudio/application/index\view\index\header.html";i:1499919683;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -16,7 +16,11 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<img src="__IMG__/1.jpg" />
+						<div class="header-txt">
+							<span>物联网工作室</span>
+							<p>Internet of Things Studio</p>
+						</div>
+						<img src="__IMG__/1.png" />
 					</div>
 
 				</div>
@@ -107,7 +111,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
-						<span> &copy;2017-物联网工作室&nbsp;<a class="glyphicon glyphicon-wrench but" href="javascript:"></a></span>
+						<span> &copy;2017-物联网工作室&nbsp;</span>
 					</div>
 				</div>
 			</div>

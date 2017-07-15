@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:74:"D:\wamp64\www\project\iotstudio/application/index\view\index\trends_4.html";i:1495198289;s:72:"D:\wamp64\www\project\iotstudio/application/index\view\index\header.html";i:1499919683;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:74:"D:\wamp64\www\project\iotstudio/application/index\view\index\trends_4.html";i:1500108746;s:72:"D:\wamp64\www\project\iotstudio/application/index\view\index\header.html";i:1499919683;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-cn">
 
@@ -16,7 +16,11 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<img src="__IMG__/1.jpg" />
+						<div class="header-txt">
+							<span>物联网工作室</span>
+							<p>Internet of Things Studio</p>
+						</div>
+						<img src="__IMG__/1.png" />
 					</div>
 
 				</div>
@@ -69,33 +73,35 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-							<ul id="myTab" class="nav nav-pills  nav-justified">
-								<li>
+						<div class="tab">
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs">
+								<li role="presentation">
 									<a href="<?php echo url('Index/trends_1'); ?>">Trend</a>
 								</li>
-								<li>
+								<li role="presentation">
 									<a href="<?php echo url('Index/trends_2'); ?>">Essay</a>
 								</li>
-								<li class="active">
-									<a href="<?php echo url('Index/trends_4'); ?>">Notic</a>
+								<li role="presentation" class="active">
+									<a href="<?php echo url('Index/trends_4'); ?>">Notice</a>
 								</li>
 							</ul>
-						<div class="tab-content">
-							<div class="tab-pane fade in active" id="gaoshi">
-								<ul class="information">
-									<?php foreach($notices as $notice): ?>
-									<li>
-										<a href="<?php echo url('Read/index').'?type=notice&id='.$notice['id']; ?>"><?php echo $notice['name']; ?></a>
-										<span><?php echo $notice['publish_date']; ?></span>
-									</li>
-									<?php endforeach; ?>
-								</ul>
+							<div class="tab-content">
+								<div class="tab-pane fade in active" id="gaoshi">
+									<ul class="information">
+										<?php foreach($notices as $notice): ?>
+										<li>
+											<a href="<?php echo url('Read/index').'?type=notice&id='.$notice['id']; ?>"><?php echo $notice['name']; ?></a>
+											<span><?php echo $notice['publish_date']; ?></span>
+										</li>
+										<?php endforeach; ?>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
 		</section>
 		<footer class="foot">
 			<div class="container">
@@ -106,9 +112,10 @@
 				</div>
 			</div>
 		</footer>
-		
-		<script type="text/javascript" src="__JS__/jquery.min.js" ></script>
-		<script type="text/javascript" src="__JS__/bootstrap.min.js" ></script>
+
+		<script type="text/javascript" src="__JS__/jquery.min.js"></script>
+		<script type="text/javascript" src="__JS__/bootstrap.min.js"></script>
 		<script type="text/javascript" src="__JS__/jquery.js"></script>
 	</body>
+
 </html>

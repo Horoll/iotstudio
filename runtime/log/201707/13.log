@@ -17489,3 +17489,4383 @@ Online education has been around for decades,with many universities offering onl
 [ sql ] [ SQL ] SELECT * FROM `course` ORDER BY id desc LIMIT 0,5 [ RunTime:0.000415s ]
 
 ---------------------------------------------------------------
+[ 2017-07-13T22:03:33+08:00 ] ::1 ::1 GET /iotstudio/
+[ log ] localhost/iotstudio/ [运行时间：0.085120s][吞吐率：11.75req/s] [内存消耗：4,954.99kb] [文件加载：55]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\index.html [ array (
+  0 => 'trends',
+  1 => 'essays',
+  2 => 'notice',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000984s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trend` [ RunTime:0.024760s ]
+[ sql ] [ SQL ] SELECT * FROM `trend` ORDER BY id desc LIMIT 5 [ RunTime:0.000513s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000856s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `essay` [ RunTime:0.000839s ]
+[ sql ] [ SQL ] SELECT * FROM `essay` ORDER BY id desc LIMIT 5 [ RunTime:0.002697s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000851s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.000868s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` ORDER BY id desc LIMIT 1 [ RunTime:0.000552s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:03:35+08:00 ] ::1 ::1 GET /iotstudio/index/index/publication.html
+[ log ] localhost/iotstudio/index/index/publication.html [运行时间：0.051829s][吞吐率：19.29req/s] [内存消耗：4,825.05kb] [文件加载：58]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'publication',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->publication[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\publication.html [ array (
+  0 => 'publications',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001216s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `publication` [ RunTime:0.002201s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `publication` LIMIT 1 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT * FROM `publication` ORDER BY id desc LIMIT 0,5 [ RunTime:0.000587s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:03:42+08:00 ] ::1 ::1 GET /iotstudio/index/index/download.html?file_name=iot.txt&file_dir=publication/20170713\46ee5a0421658c68fc80d0707d89bbe4.txt
+[ log ] localhost/iotstudio/index/index/download.html?file_name=iot.txt&file_dir=publication/20170713\46ee5a0421658c68fc80d0707d89bbe4.txt [运行时间：0.036209s][吞吐率：27.62req/s] [内存消耗：2,976.55kb] [文件加载：44]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'download',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/publication.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'file_name' => 'iot.txt',
+  'file_dir' => 'publication/20170713\\46ee5a0421658c68fc80d0707d89bbe4.txt',
+)
+[ info ] [ RUN ] app\index\controller\Index->download[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-13T22:03:59+08:00 ] ::1 ::1 GET /iotstudio/index/index/download.html?file_name=iot.txt&file_dir=publication/20170713\46ee5a0421658c68fc80d0707d89bbe4.txt
+[ log ] localhost/iotstudio/index/index/download.html?file_name=iot.txt&file_dir=publication/20170713\46ee5a0421658c68fc80d0707d89bbe4.txt [运行时间：0.026064s][吞吐率：38.37req/s] [内存消耗：2,976.55kb] [文件加载：44]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'download',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/publication.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'file_name' => 'iot.txt',
+  'file_dir' => 'publication/20170713\\46ee5a0421658c68fc80d0707d89bbe4.txt',
+)
+[ info ] [ RUN ] app\index\controller\Index->download[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-13T22:04:25+08:00 ] ::1 ::1 GET /iotstudio/index/index/course.html
+[ log ] localhost/iotstudio/index/index/course.html [运行时间：0.055806s][吞吐率：17.92req/s] [内存消耗：4,818.03kb] [文件加载：58]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'course',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/publication.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->course[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\course.html [ array (
+  0 => 'courses',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001028s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `course` [ RunTime:0.000998s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1 [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT * FROM `course` ORDER BY id desc LIMIT 0,5 [ RunTime:0.000508s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:04:33+08:00 ] ::1 ::1 GET /iotstudio/index/index/publication.html
+[ log ] localhost/iotstudio/index/index/publication.html [运行时间：0.039394s][吞吐率：25.38req/s] [内存消耗：4,568.61kb] [文件加载：56]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'publication',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/course.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->publication[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\publication.html [ array (
+  0 => 'publications',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001047s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `publication` [ RunTime:0.001096s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `publication` LIMIT 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT * FROM `publication` ORDER BY id desc LIMIT 0,5 [ RunTime:0.000473s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:04:34+08:00 ] ::1 ::1 GET /iotstudio/index/index/member.html
+[ log ] localhost/iotstudio/index/index/member.html [运行时间：0.038219s][吞吐率：26.17req/s] [内存消耗：4,631.13kb] [文件加载：55]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'member',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/publication.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->member[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\member.html [ array (
+  0 => 'members',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001147s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member` [ RunTime:0.001587s ]
+[ sql ] [ SQL ] SELECT * FROM `member` ORDER BY id desc [ RunTime:0.000528s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:04:40+08:00 ] ::1 ::1 GET /iotstudio/index/index/trends_1.html
+[ log ] localhost/iotstudio/index/index/trends_1.html [运行时间：0.046819s][吞吐率：21.36req/s] [内存消耗：4,840.55kb] [文件加载：58]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'trends_1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/member.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->trends_1[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\trends_1.html [ array (
+  0 => 'trends',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001068s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trend` [ RunTime:0.001029s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `trend` LIMIT 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT * FROM `trend` ORDER BY id desc LIMIT 0,15 [ RunTime:0.000637s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:04:42+08:00 ] ::1 ::1 GET /iotstudio/index/index/trends_2.html
+[ log ] localhost/iotstudio/index/index/trends_2.html [运行时间：0.081387s][吞吐率：12.29req/s] [内存消耗：5,073.17kb] [文件加载：58]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'trends_2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/trends_1.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->trends_2[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\trends_2.html [ array (
+  0 => 'essays',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001599s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `essay` [ RunTime:0.000958s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `essay` LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT * FROM `essay` ORDER BY id desc LIMIT 0,15 [ RunTime:0.002838s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:04:42+08:00 ] ::1 ::1 GET /iotstudio/index/index/trends_4.html
+[ log ] localhost/iotstudio/index/index/trends_4.html [运行时间：0.059940s][吞吐率：16.68req/s] [内存消耗：4,813.34kb] [文件加载：58]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'trends_4',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/trends_2.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->trends_4[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\trends_4.html [ array (
+  0 => 'notices',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001006s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.000920s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `notice` LIMIT 1 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` ORDER BY id desc LIMIT 0,15 [ RunTime:0.000445s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:04:44+08:00 ] ::1 ::1 GET /iotstudio/index/index/trends_1.html
+[ log ] localhost/iotstudio/index/index/trends_1.html [运行时间：0.049533s][吞吐率：20.19req/s] [内存消耗：4,585.33kb] [文件加载：56]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'trends_1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/trends_4.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->trends_1[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\trends_1.html [ array (
+  0 => 'trends',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010477s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trend` [ RunTime:0.001199s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `trend` LIMIT 1 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SELECT * FROM `trend` ORDER BY id desc LIMIT 0,15 [ RunTime:0.000562s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:04:45+08:00 ] ::1 ::1 GET /iotstudio/index/index/trends_2.html
+[ log ] localhost/iotstudio/index/index/trends_2.html [运行时间：0.089350s][吞吐率：11.19req/s] [内存消耗：4,820.21kb] [文件加载：56]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'trends_2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/trends_1.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->trends_2[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\trends_2.html [ array (
+  0 => 'essays',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010901s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `essay` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `essay` LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT * FROM `essay` ORDER BY id desc LIMIT 0,15 [ RunTime:0.002831s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:04:46+08:00 ] ::1 ::1 GET /iotstudio/index/index/trends_4.html
+[ log ] localhost/iotstudio/index/index/trends_4.html [运行时间：0.038044s][吞吐率：26.29req/s] [内存消耗：4,560.42kb] [文件加载：56]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'trends_4',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/trends_2.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->trends_4[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\trends_4.html [ array (
+  0 => 'notices',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001117s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.000728s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `notice` LIMIT 1 [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` ORDER BY id desc LIMIT 0,15 [ RunTime:0.000532s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:04:47+08:00 ] ::1 ::1 GET /iotstudio/index/index/index.html
+[ log ] localhost/iotstudio/index/index/index.html [运行时间：0.053083s][吞吐率：18.84req/s] [内存消耗：4,694.30kb] [文件加载：53]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/trends_4.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\index.html [ array (
+  0 => 'trends',
+  1 => 'essays',
+  2 => 'notice',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001048s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trend` [ RunTime:0.001011s ]
+[ sql ] [ SQL ] SELECT * FROM `trend` ORDER BY id desc LIMIT 5 [ RunTime:0.000406s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010231s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `essay` [ RunTime:0.001170s ]
+[ sql ] [ SQL ] SELECT * FROM `essay` ORDER BY id desc LIMIT 5 [ RunTime:0.002444s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000874s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.000803s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` ORDER BY id desc LIMIT 1 [ RunTime:0.000334s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:04:55+08:00 ] ::1 ::1 POST /iotstudio/index/index/login.html
+[ log ] localhost/iotstudio/index/index/login.html [运行时间：0.048228s][吞吐率：20.73req/s] [内存消耗：4,504.55kb] [文件加载：55]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '30',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'admin',
+  'password' => '1234565',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\public\dispatch_jump.html [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010536s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.001134s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `account` = 'admin' LIMIT 1 [ RunTime:0.000474s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:05:01+08:00 ] ::1 ::1 POST /iotstudio/index/index/login.html
+[ log ] localhost/iotstudio/index/index/login.html [运行时间：0.054845s][吞吐率：18.23req/s] [内存消耗：4,419.24kb] [文件加载：55]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '29',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\public\dispatch_jump.html [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011218s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.001297s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `account` = 'admin' LIMIT 1 [ RunTime:0.000402s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:05:02+08:00 ] ::1 ::1 GET /iotstudio/index/cms/index.html
+[ log ] localhost/iotstudio/index/cms/index.html [运行时间：0.047250s][吞吐率：21.16req/s] [内存消耗：4,924.69kb] [文件加载：59]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->index[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\index.html [ array (
+  0 => 'admin',
+  1 => 'trends',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001039s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trend` [ RunTime:0.001648s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `trend` LIMIT 1 [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SELECT * FROM `trend` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000471s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:05:04+08:00 ] ::1 ::1 GET /iotstudio/index/cms/member.html
+[ log ] localhost/iotstudio/index/cms/member.html [运行时间：0.080989s][吞吐率：12.35req/s] [内存消耗：4,927.40kb] [文件加载：59]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'member',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->member[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\member.html [ array (
+  0 => 'admin',
+  1 => 'members',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000874s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member` [ RunTime:0.000998s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `member` LIMIT 1 [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT * FROM `member` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000502s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:05:05+08:00 ] ::1 ::1 GET /iotstudio/index/cms/member.html
+[ log ] localhost/iotstudio/index/cms/member.html [运行时间：0.041166s][吞吐率：24.29req/s] [内存消耗：4,661.55kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'member',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/member.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->member[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\member.html [ array (
+  0 => 'admin',
+  1 => 'members',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001220s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member` [ RunTime:0.000926s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `member` LIMIT 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT * FROM `member` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000517s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:05:05+08:00 ] ::1 ::1 GET /iotstudio/index/cms/member.html
+[ log ] localhost/iotstudio/index/cms/member.html [运行时间：0.041339s][吞吐率：24.19req/s] [内存消耗：4,661.55kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'member',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/member.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->member[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\member.html [ array (
+  0 => 'admin',
+  1 => 'members',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001150s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member` [ RunTime:0.000972s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `member` LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT * FROM `member` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000531s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:05:06+08:00 ] ::1 ::1 GET /iotstudio/index/cms/notice.html
+[ log ] localhost/iotstudio/index/cms/notice.html [运行时间：0.099170s][吞吐率：10.08req/s] [内存消耗：4,906.89kb] [文件加载：59]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'notice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/member.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->notice[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\notice.html [ array (
+  0 => 'admin',
+  1 => 'notices',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001508s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.001653s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `notice` LIMIT 1 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000565s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:05:07+08:00 ] ::1 ::1 GET /iotstudio/index/cms/publication.html
+[ log ] localhost/iotstudio/index/cms/publication.html [运行时间：0.055191s][吞吐率：18.12req/s] [内存消耗：4,918.46kb] [文件加载：59]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'publication',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/notice.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->publication[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\publication.html [ array (
+  0 => 'admin',
+  1 => 'publications',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001077s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `publication` [ RunTime:0.001216s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `publication` LIMIT 1 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT * FROM `publication` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000704s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:05:10+08:00 ] ::1 ::1 GET /iotstudio/index/read/index.html?type=publication&id=8
+[ log ] localhost/iotstudio/index/read/index.html?type=publication&id=8 [运行时间：0.050290s][吞吐率：19.88req/s] [内存消耗：5,076.56kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'read',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/publication.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'publication',
+  'id' => '8',
+)
+[ info ] [ RUN ] app\index\controller\Read->index[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Read.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\Index\read.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010772s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `publication` [ RunTime:0.000951s ]
+[ sql ] [ SQL ] SELECT * FROM `publication` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.000449s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:05:13+08:00 ] ::1 ::1 GET /iotstudio/index/index/trends_1.html
+[ log ] localhost/iotstudio/index/index/trends_1.html [运行时间：0.052537s][吞吐率：19.03req/s] [内存消耗：4,585.03kb] [文件加载：56]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'trends_1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/read/index.html?type=publication&id=8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->trends_1[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\trends_1.html [ array (
+  0 => 'trends',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001297s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trend` [ RunTime:0.001347s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `trend` LIMIT 1 [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SELECT * FROM `trend` ORDER BY id desc LIMIT 0,15 [ RunTime:0.000785s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:05:17+08:00 ] ::1 ::1 GET /iotstudio/index/index/trends_2.html
+[ log ] localhost/iotstudio/index/index/trends_2.html [运行时间：0.039811s][吞吐率：25.12req/s] [内存消耗：4,820.03kb] [文件加载：56]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'trends_2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/read/index.html?type=publication&id=8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->trends_2[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\trends_2.html [ array (
+  0 => 'essays',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000978s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `essay` [ RunTime:0.000872s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `essay` LIMIT 1 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT * FROM `essay` ORDER BY id desc LIMIT 0,15 [ RunTime:0.002374s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:05:18+08:00 ] ::1 ::1 GET /iotstudio/index/read/index.html?type=essay&id=1
+[ log ] localhost/iotstudio/index/read/index.html?type=essay&id=1 [运行时间：0.050214s][吞吐率：19.91req/s] [内存消耗：5,188.60kb] [文件加载：55]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'read',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/trends_2.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'essay',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Read->index[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Read.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\Index\read.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010217s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `essay` [ RunTime:0.000733s ]
+[ sql ] [ SQL ] SELECT * FROM `essay` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002683s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:05:23+08:00 ] ::1 ::1 GET /iotstudio/index/index/trends_1.html
+[ log ] localhost/iotstudio/index/index/trends_1.html [运行时间：0.049527s][吞吐率：20.19req/s] [内存消耗：4,585.33kb] [文件加载：56]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'trends_1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/trends_2.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->trends_1[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\trends_1.html [ array (
+  0 => 'trends',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010620s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trend` [ RunTime:0.000739s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `trend` LIMIT 1 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SELECT * FROM `trend` ORDER BY id desc LIMIT 0,15 [ RunTime:0.000557s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:05:24+08:00 ] ::1 ::1 GET /iotstudio/index/read/index.html?type=trend&id=37
+[ log ] localhost/iotstudio/index/read/index.html?type=trend&id=37 [运行时间：0.055711s][吞吐率：17.95req/s] [内存消耗：4,820.63kb] [文件加载：55]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'read',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/trends_1.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'trend',
+  'id' => '37',
+)
+[ info ] [ RUN ] app\index\controller\Read->index[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Read.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\Index\read.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010434s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trend` [ RunTime:0.001506s ]
+[ sql ] [ SQL ] SELECT * FROM `trend` WHERE  `id` = 37 LIMIT 1 [ RunTime:0.000660s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:05:27+08:00 ] ::1 ::1 GET /iotstudio/index/index/trends_2.html
+[ log ] localhost/iotstudio/index/index/trends_2.html [运行时间：0.049791s][吞吐率：20.08req/s] [内存消耗：4,820.33kb] [文件加载：56]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'trends_2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/trends_1.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->trends_2[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\trends_2.html [ array (
+  0 => 'essays',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011155s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `essay` [ RunTime:0.000780s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `essay` LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT * FROM `essay` ORDER BY id desc LIMIT 0,15 [ RunTime:0.002601s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:05:28+08:00 ] ::1 ::1 GET /iotstudio/index/index/trends_4.html
+[ log ] localhost/iotstudio/index/index/trends_4.html [运行时间：0.037610s][吞吐率：26.59req/s] [内存消耗：4,560.52kb] [文件加载：56]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'trends_4',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/trends_2.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->trends_4[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\trends_4.html [ array (
+  0 => 'notices',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000998s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.000915s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `notice` LIMIT 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` ORDER BY id desc LIMIT 0,15 [ RunTime:0.000431s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:05:30+08:00 ] ::1 ::1 GET /iotstudio/index/index/trends_1.html
+[ log ] localhost/iotstudio/index/index/trends_1.html [运行时间：0.048901s][吞吐率：20.45req/s] [内存消耗：4,585.33kb] [文件加载：56]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'trends_1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/trends_4.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->trends_1[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\trends_1.html [ array (
+  0 => 'trends',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010040s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trend` [ RunTime:0.000941s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `trend` LIMIT 1 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT * FROM `trend` ORDER BY id desc LIMIT 0,15 [ RunTime:0.000598s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:05:38+08:00 ] ::1 ::1 GET /iotstudio/index/index/trends_1.html
+[ log ] localhost/iotstudio/index/index/trends_1.html [运行时间：0.090066s][吞吐率：11.10req/s] [内存消耗：4,585.33kb] [文件加载：56]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'trends_1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/trends_2.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->trends_1[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\trends_1.html [ array (
+  0 => 'trends',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010852s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trend` [ RunTime:0.001114s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `trend` LIMIT 1 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SELECT * FROM `trend` ORDER BY id desc LIMIT 0,15 [ RunTime:0.000616s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:05:39+08:00 ] ::1 ::1 GET /iotstudio/index/index/trends_1.html?page=2
+[ log ] localhost/iotstudio/index/index/trends_1.html?page=2 [运行时间：0.039649s][吞吐率：25.22req/s] [内存消耗：4,705.37kb] [文件加载：56]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'trends_1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/trends_1.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Index->trends_1[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\trends_1.html [ array (
+  0 => 'trends',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000937s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trend` [ RunTime:0.000851s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `trend` LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT * FROM `trend` ORDER BY id desc LIMIT 15,15 [ RunTime:0.001733s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:05:41+08:00 ] ::1 ::1 GET /iotstudio/index/index/trends_1.html?page=1
+[ log ] localhost/iotstudio/index/index/trends_1.html?page=1 [运行时间：0.041920s][吞吐率：23.85req/s] [内存消耗：4,585.76kb] [文件加载：56]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'trends_1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/trends_1.html?page=2',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Index->trends_1[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\trends_1.html [ array (
+  0 => 'trends',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001047s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trend` [ RunTime:0.000929s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `trend` LIMIT 1 [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SELECT * FROM `trend` ORDER BY id desc LIMIT 0,15 [ RunTime:0.000653s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:05:41+08:00 ] ::1 ::1 GET /iotstudio/index/index/member.html
+[ log ] localhost/iotstudio/index/index/member.html [运行时间：0.044142s][吞吐率：22.65req/s] [内存消耗：4,376.70kb] [文件加载：53]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'member',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/trends_1.html?page=1',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->member[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\member.html [ array (
+  0 => 'members',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010402s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member` [ RunTime:0.000780s ]
+[ sql ] [ SQL ] SELECT * FROM `member` ORDER BY id desc [ RunTime:0.000478s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:05:42+08:00 ] ::1 ::1 GET /iotstudio/index/index/trends_1.html
+[ log ] localhost/iotstudio/index/index/trends_1.html [运行时间：0.070087s][吞吐率：14.27req/s] [内存消耗：4,585.34kb] [文件加载：56]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'trends_1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/member.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->trends_1[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\trends_1.html [ array (
+  0 => 'trends',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010612s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trend` [ RunTime:0.000961s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `trend` LIMIT 1 [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT * FROM `trend` ORDER BY id desc LIMIT 0,15 [ RunTime:0.000549s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:05:43+08:00 ] ::1 ::1 GET /iotstudio/index/index/trends_4.html
+[ log ] localhost/iotstudio/index/index/trends_4.html [运行时间：0.039090s][吞吐率：25.58req/s] [内存消耗：4,560.52kb] [文件加载：56]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'trends_4',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/trends_1.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->trends_4[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\trends_4.html [ array (
+  0 => 'notices',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001324s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.001334s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `notice` LIMIT 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` ORDER BY id desc LIMIT 0,15 [ RunTime:0.000516s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:05:45+08:00 ] ::1 ::1 GET /iotstudio/index/index/index.html
+[ log ] localhost/iotstudio/index/index/index.html [运行时间：0.052441s][吞吐率：19.07req/s] [内存消耗：4,694.59kb] [文件加载：53]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/trends_4.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\index.html [ array (
+  0 => 'trends',
+  1 => 'essays',
+  2 => 'notice',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010590s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trend` [ RunTime:0.000724s ]
+[ sql ] [ SQL ] SELECT * FROM `trend` ORDER BY id desc LIMIT 5 [ RunTime:0.000416s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000772s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `essay` [ RunTime:0.000574s ]
+[ sql ] [ SQL ] SELECT * FROM `essay` ORDER BY id desc LIMIT 5 [ RunTime:0.002632s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000894s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.000708s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` ORDER BY id desc LIMIT 1 [ RunTime:0.000356s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:05:45+08:00 ] ::1 ::1 GET /iotstudio/index/index/trends_1.html
+[ log ] localhost/iotstudio/index/index/trends_1.html [运行时间：0.078307s][吞吐率：12.77req/s] [内存消耗：4,585.33kb] [文件加载：56]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'trends_1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->trends_1[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\trends_1.html [ array (
+  0 => 'trends',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001363s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trend` [ RunTime:0.001019s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `trend` LIMIT 1 [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT * FROM `trend` ORDER BY id desc LIMIT 0,15 [ RunTime:0.000557s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:05:56+08:00 ] ::1 ::1 GET /iotstudio/index/cms/change.html?type=publication&id=8
+[ log ] localhost/iotstudio/index/cms/change.html?type=publication&id=8 [运行时间：0.053147s][吞吐率：18.82req/s] [内存消耗：5,208.65kb] [文件加载：58]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'change',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/publication.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'publication',
+  'id' => '8',
+)
+[ info ] [ RUN ] app\index\controller\Cms->change[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\changePublication.html [ array (
+  0 => 'admin',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011153s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `publication` [ RunTime:0.001076s ]
+[ sql ] [ SQL ] SELECT * FROM `publication` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.000460s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:06:07+08:00 ] ::1 ::1 GET /iotstudio/index/cms/change.html?type=publication&id=7
+[ log ] localhost/iotstudio/index/cms/change.html?type=publication&id=7 [运行时间：0.052791s][吞吐率：18.94req/s] [内存消耗：4,951.94kb] [文件加载：56]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'change',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/publication.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'publication',
+  'id' => '7',
+)
+[ info ] [ RUN ] app\index\controller\Cms->change[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\changePublication.html [ array (
+  0 => 'admin',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001059s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `publication` [ RunTime:0.000925s ]
+[ sql ] [ SQL ] SELECT * FROM `publication` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000659s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:06:31+08:00 ] ::1 ::1 GET /iotstudio/index/cms/essay.html
+[ log ] localhost/iotstudio/index/cms/essay.html [运行时间：0.375306s][吞吐率：2.66req/s] [内存消耗：5,166.26kb] [文件加载：59]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'essay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/change.html?type=publication&id=7',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->essay[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\essay.html [ array (
+  0 => 'admin',
+  1 => 'essays',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000961s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `essay` [ RunTime:0.000885s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `essay` LIMIT 1 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SELECT * FROM `essay` ORDER BY id desc LIMIT 0,10 [ RunTime:0.002434s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:06:33+08:00 ] ::1 ::1 GET /iotstudio/index/cms/change.html?type=essay&id=1
+[ log ] localhost/iotstudio/index/cms/change.html?type=essay&id=1 [运行时间：0.045561s][吞吐率：21.95req/s] [内存消耗：5,691.32kb] [文件加载：58]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'change',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/essay.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'essay',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Cms->change[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\changeEssay.html [ array (
+  0 => 'admin',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001109s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `essay` [ RunTime:0.001155s ]
+[ sql ] [ SQL ] SELECT * FROM `essay` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.003708s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:07:39+08:00 ] ::1 ::1 POST /iotstudio/index/cms/change.html?type=essay&id=1
+[ log ] localhost/iotstudio/index/cms/change.html?type=essay&id=1 [运行时间：0.045268s][吞吐率：22.09req/s] [内存消耗：5,339.02kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'change',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '2502702',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'x-file-name' => '5757da7ea629b.jpg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryHRBUAHwnfTbostLS',
+  'referer' => 'http://localhost/iotstudio/index/cms/change.html?type=essay&id=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'essay',
+  'id' => '1',
+  'original_filename' => '5757da7ea629b.jpg',
+)
+[ info ] [ RUN ] app\index\controller\Cms->change[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\changeEssay.html [ array (
+  0 => 'admin',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001049s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `essay` [ RunTime:0.001302s ]
+[ sql ] [ SQL ] SELECT * FROM `essay` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002498s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:07:39+08:00 ] ::1 ::1 GET /iotstudio/index/cms/undefined
+[ log ] localhost/iotstudio/index/cms/undefined [运行时间：0.047586s][吞吐率：21.01req/s] [内存消耗：3,146.39kb] [文件加载：48]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'undefined',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/change.html?type=essay&id=1',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-13T22:08:00+08:00 ] ::1 ::1 POST /iotstudio/index/cms/change.html?type=essay&id=1
+[ log ] localhost/iotstudio/index/cms/change.html?type=essay&id=1 [运行时间：0.058085s][吞吐率：17.22req/s] [内存消耗：5,339.21kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'change',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '78981',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'x-file-name' => '5773bd2327fba_1024.jpg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary3BdgqCs6tiXB2ayt',
+  'referer' => 'http://localhost/iotstudio/index/cms/change.html?type=essay&id=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'essay',
+  'id' => '1',
+  'original_filename' => '5773bd2327fba_1024.jpg',
+)
+[ info ] [ RUN ] app\index\controller\Cms->change[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\changeEssay.html [ array (
+  0 => 'admin',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010275s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `essay` [ RunTime:0.001017s ]
+[ sql ] [ SQL ] SELECT * FROM `essay` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002555s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:08:00+08:00 ] ::1 ::1 GET /iotstudio/index/cms/undefined
+[ log ] localhost/iotstudio/index/cms/undefined [运行时间：0.028158s][吞吐率：35.51req/s] [内存消耗：3,146.39kb] [文件加载：48]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'undefined',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/change.html?type=essay&id=1',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-13T22:08:16+08:00 ] ::1 ::1 POST /iotstudio/index/cms/change.html?type=essay&id=1
+[ log ] localhost/iotstudio/index/cms/change.html?type=essay&id=1 [运行时间：0.050153s][吞吐率：19.94req/s] [内存消耗：5,339.21kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'change',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '122492',
+  'accept' => '*/*',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'x-file-name' => '201510a0hoaikosa332.jpg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryARvsgPLTvfH7CtTy',
+  'referer' => 'http://localhost/iotstudio/index/cms/change.html?type=essay&id=1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'essay',
+  'id' => '1',
+  'original_filename' => '201510a0hoaikosa332.jpg',
+)
+[ info ] [ RUN ] app\index\controller\Cms->change[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\changeEssay.html [ array (
+  0 => 'admin',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001153s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `essay` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `essay` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.004302s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:08:16+08:00 ] ::1 ::1 GET /iotstudio/index/cms/undefined
+[ log ] localhost/iotstudio/index/cms/undefined [运行时间：0.028297s][吞吐率：35.34req/s] [内存消耗：3,146.39kb] [文件加载：48]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'undefined',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/change.html?type=essay&id=1',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-13T22:08:28+08:00 ] ::1 ::1 GET /iotstudio/index/cms/essay.html
+[ log ] localhost/iotstudio/index/cms/essay.html [运行时间：0.040733s][吞吐率：24.55req/s] [内存消耗：4,910.11kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'essay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/change.html?type=essay&id=1',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->essay[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\essay.html [ array (
+  0 => 'admin',
+  1 => 'essays',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001005s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `essay` [ RunTime:0.000947s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `essay` LIMIT 1 [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SELECT * FROM `essay` ORDER BY id desc LIMIT 0,10 [ RunTime:0.002372s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:08:29+08:00 ] ::1 ::1 GET /iotstudio/index/cms/course.html
+[ log ] localhost/iotstudio/index/cms/course.html [运行时间：0.042796s][吞吐率：23.37req/s] [内存消耗：4,911.92kb] [文件加载：59]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'course',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/essay.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->course[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\course.html [ array (
+  0 => 'admin',
+  1 => 'courses',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001407s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `course` [ RunTime:0.001778s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1 [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SELECT * FROM `course` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000373s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:08:30+08:00 ] ::1 ::1 GET /iotstudio/index/cms/index.html
+[ log ] localhost/iotstudio/index/cms/index.html [运行时间：0.040278s][吞吐率：24.83req/s] [内存消耗：4,658.90kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/course.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->index[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\index.html [ array (
+  0 => 'admin',
+  1 => 'trends',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000987s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trend` [ RunTime:0.000876s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `trend` LIMIT 1 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT * FROM `trend` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000400s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:08:33+08:00 ] ::1 ::1 GET /iotstudio/index/cms/change.html?type=trend&id=37
+[ log ] localhost/iotstudio/index/cms/change.html?type=trend&id=37 [运行时间：0.050853s][吞吐率：19.66req/s] [内存消耗：5,202.72kb] [文件加载：58]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'change',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'trend',
+  'id' => '37',
+)
+[ info ] [ RUN ] app\index\controller\Cms->change[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\changeTrend.html [ array (
+  0 => 'admin',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010852s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trend` [ RunTime:0.000816s ]
+[ sql ] [ SQL ] SELECT * FROM `trend` WHERE  `id` = 37 LIMIT 1 [ RunTime:0.000455s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:08:36+08:00 ] ::1 ::1 GET /iotstudio/index/cms/index.html
+[ log ] localhost/iotstudio/index/cms/index.html [运行时间：0.040571s][吞吐率：24.65req/s] [内存消耗：4,659.12kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->index[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\index.html [ array (
+  0 => 'admin',
+  1 => 'trends',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000909s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trend` [ RunTime:0.000882s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `trend` LIMIT 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT * FROM `trend` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000410s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:08:36+08:00 ] ::1 ::1 GET /iotstudio/index/cms/essay.html
+[ log ] localhost/iotstudio/index/cms/essay.html [运行时间：0.088741s][吞吐率：11.27req/s] [内存消耗：4,910.07kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'essay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->essay[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\essay.html [ array (
+  0 => 'admin',
+  1 => 'essays',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010241s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `essay` [ RunTime:0.001166s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `essay` LIMIT 1 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SELECT * FROM `essay` ORDER BY id desc LIMIT 0,10 [ RunTime:0.003405s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:08:36+08:00 ] ::1 ::1 GET /iotstudio/index/cms/course.html
+[ log ] localhost/iotstudio/index/cms/course.html [运行时间：0.048766s][吞吐率：20.51req/s] [内存消耗：4,652.98kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'course',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/essay.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->course[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\course.html [ array (
+  0 => 'admin',
+  1 => 'courses',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011105s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `course` [ RunTime:0.000940s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT * FROM `course` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000469s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:08:37+08:00 ] ::1 ::1 GET /iotstudio/index/cms/publication.html
+[ log ] localhost/iotstudio/index/cms/publication.html [运行时间：0.049401s][吞吐率：20.24req/s] [内存消耗：4,658.52kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'publication',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/course.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->publication[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\publication.html [ array (
+  0 => 'admin',
+  1 => 'publications',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010484s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `publication` [ RunTime:0.001191s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `publication` LIMIT 1 [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SELECT * FROM `publication` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000516s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:08:37+08:00 ] ::1 ::1 GET /iotstudio/index/cms/notice.html
+[ log ] localhost/iotstudio/index/cms/notice.html [运行时间：0.047893s][吞吐率：20.88req/s] [内存消耗：4,649.90kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'notice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/publication.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->notice[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\notice.html [ array (
+  0 => 'admin',
+  1 => 'notices',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010242s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.000945s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `notice` LIMIT 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000402s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:08:37+08:00 ] ::1 ::1 GET /iotstudio/index/cms/member.html
+[ log ] localhost/iotstudio/index/cms/member.html [运行时间：0.054595s][吞吐率：18.32req/s] [内存消耗：4,661.55kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'member',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/notice.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->member[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\member.html [ array (
+  0 => 'admin',
+  1 => 'members',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010764s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member` [ RunTime:0.001028s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `member` LIMIT 1 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SELECT * FROM `member` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000444s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:08:38+08:00 ] ::1 ::1 GET /iotstudio/index/cms/member.html
+[ log ] localhost/iotstudio/index/cms/member.html [运行时间：0.049959s][吞吐率：20.02req/s] [内存消耗：4,661.55kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'member',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/member.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->member[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\member.html [ array (
+  0 => 'admin',
+  1 => 'members',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010452s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member` [ RunTime:0.000815s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `member` LIMIT 1 [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SELECT * FROM `member` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000483s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:08:39+08:00 ] ::1 ::1 GET /iotstudio/index/cms/member.html
+[ log ] localhost/iotstudio/index/cms/member.html [运行时间：0.052664s][吞吐率：18.99req/s] [内存消耗：4,661.55kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'member',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/member.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->member[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\member.html [ array (
+  0 => 'admin',
+  1 => 'members',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010884s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member` [ RunTime:0.001936s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `member` LIMIT 1 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT * FROM `member` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000884s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:08:39+08:00 ] ::1 ::1 GET /iotstudio/index/cms/member.html
+[ log ] localhost/iotstudio/index/cms/member.html [运行时间：0.042709s][吞吐率：23.41req/s] [内存消耗：4,661.55kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'member',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/member.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->member[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\member.html [ array (
+  0 => 'admin',
+  1 => 'members',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001230s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member` [ RunTime:0.001613s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `member` LIMIT 1 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SELECT * FROM `member` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000778s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:08:39+08:00 ] ::1 ::1 GET /iotstudio/index/cms/notice.html
+[ log ] localhost/iotstudio/index/cms/notice.html [运行时间：0.041671s][吞吐率：24.00req/s] [内存消耗：4,649.90kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'notice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/member.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->notice[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\notice.html [ array (
+  0 => 'admin',
+  1 => 'notices',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000988s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.000775s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `notice` LIMIT 1 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000433s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:08:40+08:00 ] ::1 ::1 GET /iotstudio/index/cms/publication.html
+[ log ] localhost/iotstudio/index/cms/publication.html [运行时间：0.039771s][吞吐率：25.14req/s] [内存消耗：4,658.52kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'publication',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/notice.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->publication[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\publication.html [ array (
+  0 => 'admin',
+  1 => 'publications',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000985s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `publication` [ RunTime:0.000992s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `publication` LIMIT 1 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT * FROM `publication` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000539s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:08:41+08:00 ] ::1 ::1 GET /iotstudio/index/cms/notice.html
+[ log ] localhost/iotstudio/index/cms/notice.html [运行时间：0.078095s][吞吐率：12.80req/s] [内存消耗：4,649.90kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'notice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/publication.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->notice[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\notice.html [ array (
+  0 => 'admin',
+  1 => 'notices',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001620s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.001043s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `notice` LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000403s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:08:41+08:00 ] ::1 ::1 GET /iotstudio/index/cms/course.html
+[ log ] localhost/iotstudio/index/cms/course.html [运行时间：0.039947s][吞吐率：25.03req/s] [内存消耗：4,652.75kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'course',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/notice.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->course[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\course.html [ array (
+  0 => 'admin',
+  1 => 'courses',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001293s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `course` [ RunTime:0.001702s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT * FROM `course` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000560s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:08:42+08:00 ] ::1 ::1 GET /iotstudio/index/cms/essay.html
+[ log ] localhost/iotstudio/index/cms/essay.html [运行时间：0.050275s][吞吐率：19.89req/s] [内存消耗：4,909.61kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'essay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/course.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->essay[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\essay.html [ array (
+  0 => 'admin',
+  1 => 'essays',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010827s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `essay` [ RunTime:0.000907s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `essay` LIMIT 1 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SELECT * FROM `essay` ORDER BY id desc LIMIT 0,10 [ RunTime:0.002358s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:08:42+08:00 ] ::1 ::1 GET /iotstudio/index/cms/course.html
+[ log ] localhost/iotstudio/index/cms/course.html [运行时间：0.039348s][吞吐率：25.41req/s] [内存消耗：4,652.98kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'course',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/essay.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->course[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\course.html [ array (
+  0 => 'admin',
+  1 => 'courses',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001161s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `course` [ RunTime:0.000866s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT * FROM `course` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000444s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:08:42+08:00 ] ::1 ::1 GET /iotstudio/index/cms/essay.html
+[ log ] localhost/iotstudio/index/cms/essay.html [运行时间：0.055576s][吞吐率：17.99req/s] [内存消耗：4,909.61kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'essay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/course.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->essay[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\essay.html [ array (
+  0 => 'admin',
+  1 => 'essays',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010931s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `essay` [ RunTime:0.000904s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `essay` LIMIT 1 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT * FROM `essay` ORDER BY id desc LIMIT 0,10 [ RunTime:0.002403s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:08:43+08:00 ] ::1 ::1 GET /iotstudio/index/cms/index.html
+[ log ] localhost/iotstudio/index/cms/index.html [运行时间：0.090706s][吞吐率：11.02req/s] [内存消耗：4,659.12kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/essay.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->index[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\index.html [ array (
+  0 => 'admin',
+  1 => 'trends',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010972s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trend` [ RunTime:0.001514s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `trend` LIMIT 1 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT * FROM `trend` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000587s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:08:45+08:00 ] ::1 ::1 GET /iotstudio/index/index/logout.html
+[ log ] localhost/iotstudio/index/index/logout.html [运行时间：0.024992s][吞吐率：40.01req/s] [内存消耗：3,149.91kb] [文件加载：48]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'logout',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->logout[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\public\dispatch_jump.html [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-13T22:08:46+08:00 ] ::1 ::1 GET /iotstudio/index/index/index.html
+[ log ] localhost/iotstudio/index/index/index.html [运行时间：0.056978s][吞吐率：17.55req/s] [内存消耗：4,694.27kb] [文件加载：53]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/logout.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\index.html [ array (
+  0 => 'trends',
+  1 => 'essays',
+  2 => 'notice',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010769s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trend` [ RunTime:0.000998s ]
+[ sql ] [ SQL ] SELECT * FROM `trend` ORDER BY id desc LIMIT 5 [ RunTime:0.000610s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001051s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `essay` [ RunTime:0.000793s ]
+[ sql ] [ SQL ] SELECT * FROM `essay` ORDER BY id desc LIMIT 5 [ RunTime:0.002546s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000865s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.000698s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` ORDER BY id desc LIMIT 1 [ RunTime:0.000349s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:09:11+08:00 ] ::1 ::1 GET /iotstudio/index/index/publication.html
+[ log ] localhost/iotstudio/index/index/publication.html [运行时间：0.039209s][吞吐率：25.50req/s] [内存消耗：4,568.61kb] [文件加载：56]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'publication',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->publication[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\publication.html [ array (
+  0 => 'publications',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001165s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `publication` [ RunTime:0.000935s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `publication` LIMIT 1 [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SELECT * FROM `publication` ORDER BY id desc LIMIT 0,5 [ RunTime:0.000701s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:09:12+08:00 ] ::1 ::1 GET /iotstudio/index/index/course.html
+[ log ] localhost/iotstudio/index/index/course.html [运行时间：0.038118s][吞吐率：26.23req/s] [内存消耗：4,563.34kb] [文件加载：56]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'course',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/publication.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->course[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\course.html [ array (
+  0 => 'courses',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001066s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `course` [ RunTime:0.000944s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT * FROM `course` ORDER BY id desc LIMIT 0,5 [ RunTime:0.000446s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:09:16+08:00 ] ::1 ::1 GET /iotstudio/index/index/publication.html
+[ log ] localhost/iotstudio/index/index/publication.html [运行时间：0.049101s][吞吐率：20.37req/s] [内存消耗：4,568.61kb] [文件加载：56]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'publication',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/course.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->publication[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\publication.html [ array (
+  0 => 'publications',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011149s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `publication` [ RunTime:0.001138s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `publication` LIMIT 1 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT * FROM `publication` ORDER BY id desc LIMIT 0,5 [ RunTime:0.000467s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:09:36+08:00 ] ::1 ::1 GET /iotstudio/index/index/publication.html
+[ log ] localhost/iotstudio/index/index/publication.html [运行时间：0.047499s][吞吐率：21.05req/s] [内存消耗：4,568.48kb] [文件加载：56]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'publication',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/publication.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->publication[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\publication.html [ array (
+  0 => 'publications',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010511s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `publication` [ RunTime:0.001065s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `publication` LIMIT 1 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT * FROM `publication` ORDER BY id desc LIMIT 0,5 [ RunTime:0.000405s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:09:40+08:00 ] ::1 ::1 GET /iotstudio/index/index/course.html
+[ log ] localhost/iotstudio/index/index/course.html [运行时间：0.038766s][吞吐率：25.80req/s] [内存消耗：4,563.34kb] [文件加载：56]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'course',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/publication.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->course[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\course.html [ array (
+  0 => 'courses',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001391s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `course` [ RunTime:0.001728s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT * FROM `course` ORDER BY id desc LIMIT 0,5 [ RunTime:0.000594s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:09:40+08:00 ] ::1 ::1 GET /iotstudio/index/index/member.html
+[ log ] localhost/iotstudio/index/index/member.html [运行时间：0.043933s][吞吐率：22.76req/s] [内存消耗：4,376.45kb] [文件加载：53]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'member',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/course.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->member[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\member.html [ array (
+  0 => 'members',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010579s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member` [ RunTime:0.000916s ]
+[ sql ] [ SQL ] SELECT * FROM `member` ORDER BY id desc [ RunTime:0.000558s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:09:42+08:00 ] ::1 ::1 GET /iotstudio/index/index/index.html
+[ log ] localhost/iotstudio/index/index/index.html [运行时间：0.059315s][吞吐率：16.86req/s] [内存消耗：4,694.27kb] [文件加载：53]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/member.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\index.html [ array (
+  0 => 'trends',
+  1 => 'essays',
+  2 => 'notice',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001056s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trend` [ RunTime:0.000791s ]
+[ sql ] [ SQL ] SELECT * FROM `trend` ORDER BY id desc LIMIT 5 [ RunTime:0.000472s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010207s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `essay` [ RunTime:0.000840s ]
+[ sql ] [ SQL ] SELECT * FROM `essay` ORDER BY id desc LIMIT 5 [ RunTime:0.002926s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000966s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.001128s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` ORDER BY id desc LIMIT 1 [ RunTime:0.000482s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:09:50+08:00 ] ::1 ::1 POST /iotstudio/index/index/login.html
+[ log ] localhost/iotstudio/index/index/login.html [运行时间：0.034555s][吞吐率：28.94req/s] [内存消耗：4,419.24kb] [文件加载：55]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '29',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\public\dispatch_jump.html [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000988s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.000925s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `account` = 'admin' LIMIT 1 [ RunTime:0.000443s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:09:52+08:00 ] ::1 ::1 GET /iotstudio/index/cms/index.html
+[ log ] localhost/iotstudio/index/cms/index.html [运行时间：0.043057s][吞吐率：23.22req/s] [内存消耗：4,658.90kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->index[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\index.html [ array (
+  0 => 'admin',
+  1 => 'trends',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001054s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trend` [ RunTime:0.000885s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `trend` LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT * FROM `trend` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000685s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:09:55+08:00 ] ::1 ::1 GET /iotstudio/index/cms/notice.html
+[ log ] localhost/iotstudio/index/cms/notice.html [运行时间：0.047994s][吞吐率：20.84req/s] [内存消耗：4,650.20kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'notice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->notice[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\notice.html [ array (
+  0 => 'admin',
+  1 => 'notices',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010286s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.000957s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `notice` LIMIT 1 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000396s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:09:56+08:00 ] ::1 ::1 GET /iotstudio/index/cms/member.html
+[ log ] localhost/iotstudio/index/cms/member.html [运行时间：0.049263s][吞吐率：20.30req/s] [内存消耗：4,661.55kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'member',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/notice.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->member[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\member.html [ array (
+  0 => 'admin',
+  1 => 'members',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010133s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member` [ RunTime:0.000742s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `member` LIMIT 1 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT * FROM `member` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000453s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:09:56+08:00 ] ::1 ::1 GET /iotstudio/index/cms/publication.html
+[ log ] localhost/iotstudio/index/cms/publication.html [运行时间：0.050060s][吞吐率：19.98req/s] [内存消耗：4,658.52kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'publication',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/member.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->publication[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\publication.html [ array (
+  0 => 'admin',
+  1 => 'publications',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010945s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `publication` [ RunTime:0.000872s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `publication` LIMIT 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT * FROM `publication` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000406s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:09:57+08:00 ] ::1 ::1 GET /iotstudio/index/cms/course.html
+[ log ] localhost/iotstudio/index/cms/course.html [运行时间：0.048831s][吞吐率：20.48req/s] [内存消耗：4,652.75kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'course',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/publication.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->course[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\course.html [ array (
+  0 => 'admin',
+  1 => 'courses',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011085s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `course` [ RunTime:0.000945s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT * FROM `course` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000483s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:10:05+08:00 ] ::1 ::1 GET /iotstudio/index/cms/notice.html
+[ log ] localhost/iotstudio/index/cms/notice.html [运行时间：0.077571s][吞吐率：12.89req/s] [内存消耗：4,649.90kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'notice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/course.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->notice[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\notice.html [ array (
+  0 => 'admin',
+  1 => 'notices',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001194s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.000741s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `notice` LIMIT 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000511s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:10:06+08:00 ] ::1 ::1 GET /iotstudio/index/cms/member.html
+[ log ] localhost/iotstudio/index/cms/member.html [运行时间：0.092335s][吞吐率：10.83req/s] [内存消耗：4,661.55kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'member',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/notice.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->member[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\member.html [ array (
+  0 => 'admin',
+  1 => 'members',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011259s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member` [ RunTime:0.001862s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `member` LIMIT 1 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SELECT * FROM `member` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000651s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:10:07+08:00 ] ::1 ::1 GET /iotstudio/index/cms/member.html
+[ log ] localhost/iotstudio/index/cms/member.html [运行时间：0.051403s][吞吐率：19.45req/s] [内存消耗：4,661.55kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'member',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/member.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->member[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\member.html [ array (
+  0 => 'admin',
+  1 => 'members',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010520s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member` [ RunTime:0.000810s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `member` LIMIT 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT * FROM `member` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000679s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:10:07+08:00 ] ::1 ::1 GET /iotstudio/index/cms/publication.html
+[ log ] localhost/iotstudio/index/cms/publication.html [运行时间：0.039541s][吞吐率：25.29req/s] [内存消耗：4,658.52kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'publication',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/member.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->publication[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\publication.html [ array (
+  0 => 'admin',
+  1 => 'publications',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001168s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `publication` [ RunTime:0.001438s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `publication` LIMIT 1 [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT * FROM `publication` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000409s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:10:11+08:00 ] ::1 ::1 GET /iotstudio/index/cms/course.html
+[ log ] localhost/iotstudio/index/cms/course.html [运行时间：0.039016s][吞吐率：25.63req/s] [内存消耗：4,652.75kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'course',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/publication.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->course[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\course.html [ array (
+  0 => 'admin',
+  1 => 'courses',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001140s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `course` [ RunTime:0.000930s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SELECT * FROM `course` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000502s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:10:12+08:00 ] ::1 ::1 GET /iotstudio/index/cms/publication.html
+[ log ] localhost/iotstudio/index/cms/publication.html [运行时间：0.049505s][吞吐率：20.20req/s] [内存消耗：4,658.52kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'publication',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/course.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->publication[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\publication.html [ array (
+  0 => 'admin',
+  1 => 'publications',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010341s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `publication` [ RunTime:0.001757s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `publication` LIMIT 1 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT * FROM `publication` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000664s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:10:14+08:00 ] ::1 ::1 GET /iotstudio/index/cms/change.html?type=publication&id=8
+[ log ] localhost/iotstudio/index/cms/change.html?type=publication&id=8 [运行时间：0.039476s][吞吐率：25.33req/s] [内存消耗：4,951.40kb] [文件加载：56]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'change',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/publication.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'publication',
+  'id' => '8',
+)
+[ info ] [ RUN ] app\index\controller\Cms->change[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\changePublication.html [ array (
+  0 => 'admin',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001075s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `publication` [ RunTime:0.000978s ]
+[ sql ] [ SQL ] SELECT * FROM `publication` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.000564s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:14:54+08:00 ] ::1 ::1 GET /iotstudio/
+[ log ] localhost/iotstudio/ [运行时间：0.051892s][吞吐率：19.27req/s] [内存消耗：4,693.48kb] [文件加载：53]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\index.html [ array (
+  0 => 'trends',
+  1 => 'essays',
+  2 => 'notice',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001046s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trend` [ RunTime:0.000818s ]
+[ sql ] [ SQL ] SELECT * FROM `trend` ORDER BY id desc LIMIT 5 [ RunTime:0.000382s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000704s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `essay` [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SELECT * FROM `essay` ORDER BY id desc LIMIT 5 [ RunTime:0.002416s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010349s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.000728s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` ORDER BY id desc LIMIT 1 [ RunTime:0.000375s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:15:09+08:00 ] ::1 ::1 POST /iotstudio/index/index/login.html
+[ log ] localhost/iotstudio/index/index/login.html [运行时间：0.043241s][吞吐率：23.13req/s] [内存消耗：4,419.73kb] [文件加载：55]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '29',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\public\dispatch_jump.html [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001083s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.000889s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `account` = 'admin' LIMIT 1 [ RunTime:0.000545s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:15:10+08:00 ] ::1 ::1 GET /iotstudio/index/cms/index.html
+[ log ] localhost/iotstudio/index/cms/index.html [运行时间：0.045220s][吞吐率：22.11req/s] [内存消耗：4,658.90kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->index[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\index.html [ array (
+  0 => 'admin',
+  1 => 'trends',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001221s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trend` [ RunTime:0.000878s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `trend` LIMIT 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SELECT * FROM `trend` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000513s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:15:12+08:00 ] ::1 ::1 GET /iotstudio/index/cms/essay.html
+[ log ] localhost/iotstudio/index/cms/essay.html [运行时间：0.058866s][吞吐率：16.99req/s] [内存消耗：4,910.07kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'essay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->essay[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\essay.html [ array (
+  0 => 'admin',
+  1 => 'essays',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010623s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `essay` [ RunTime:0.000804s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `essay` LIMIT 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SELECT * FROM `essay` ORDER BY id desc LIMIT 0,10 [ RunTime:0.002614s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:15:13+08:00 ] ::1 ::1 GET /iotstudio/index/cms/change.html?type=essay&id=1
+[ log ] localhost/iotstudio/index/cms/change.html?type=essay&id=1 [运行时间：0.059634s][吞吐率：16.77req/s] [内存消耗：5,321.32kb] [文件加载：56]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'change',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/essay.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'essay',
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Cms->change[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\changeEssay.html [ array (
+  0 => 'admin',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010554s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `essay` [ RunTime:0.001039s ]
+[ sql ] [ SQL ] SELECT * FROM `essay` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002930s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T22:25:52+08:00 ] ::1 ::1 GET /iotstudio/
+[ log ] localhost/iotstudio/ [运行时间：0.053610s][吞吐率：18.65req/s] [内存消耗：4,693.48kb] [文件加载：53]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\index.html [ array (
+  0 => 'trends',
+  1 => 'essays',
+  2 => 'notice',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001415s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trend` [ RunTime:0.001087s ]
+[ sql ] [ SQL ] SELECT * FROM `trend` ORDER BY id desc LIMIT 5 [ RunTime:0.000418s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000856s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `essay` [ RunTime:0.000630s ]
+[ sql ] [ SQL ] SELECT * FROM `essay` ORDER BY id desc LIMIT 5 [ RunTime:0.002446s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000987s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.000891s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` ORDER BY id desc LIMIT 1 [ RunTime:0.000527s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T23:14:41+08:00 ] ::1 ::1 GET /iotstudio/
+[ log ] localhost/iotstudio/ [运行时间：0.060089s][吞吐率：16.64req/s] [内存消耗：4,693.48kb] [文件加载：53]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\index.html [ array (
+  0 => 'trends',
+  1 => 'essays',
+  2 => 'notice',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001338s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trend` [ RunTime:0.000969s ]
+[ sql ] [ SQL ] SELECT * FROM `trend` ORDER BY id desc LIMIT 5 [ RunTime:0.000639s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002267s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `essay` [ RunTime:0.001558s ]
+[ sql ] [ SQL ] SELECT * FROM `essay` ORDER BY id desc LIMIT 5 [ RunTime:0.002811s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001859s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.001012s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` ORDER BY id desc LIMIT 1 [ RunTime:0.000429s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T23:14:49+08:00 ] ::1 ::1 GET /iotstudio/index/index/trends_1.html
+[ log ] localhost/iotstudio/index/index/trends_1.html [运行时间：0.048194s][吞吐率：20.75req/s] [内存消耗：4,585.30kb] [文件加载：56]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'trends_1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->trends_1[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\trends_1.html [ array (
+  0 => 'trends',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001373s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trend` [ RunTime:0.000993s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `trend` LIMIT 1 [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SELECT * FROM `trend` ORDER BY id desc LIMIT 0,15 [ RunTime:0.000585s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T23:14:51+08:00 ] ::1 ::1 GET /iotstudio/index/index/trends_2.html
+[ log ] localhost/iotstudio/index/index/trends_2.html [运行时间：0.057009s][吞吐率：17.54req/s] [内存消耗：4,820.21kb] [文件加载：56]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'trends_2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/trends_1.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->trends_2[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\trends_2.html [ array (
+  0 => 'essays',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011057s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `essay` [ RunTime:0.000881s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `essay` LIMIT 1 [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT * FROM `essay` ORDER BY id desc LIMIT 0,15 [ RunTime:0.002470s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T23:14:52+08:00 ] ::1 ::1 GET /iotstudio/index/index/trends_4.html
+[ log ] localhost/iotstudio/index/index/trends_4.html [运行时间：0.048142s][吞吐率：20.77req/s] [内存消耗：4,560.42kb] [文件加载：56]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'trends_4',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/trends_2.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->trends_4[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\trends_4.html [ array (
+  0 => 'notices',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001049s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.000831s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `notice` LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` ORDER BY id desc LIMIT 0,15 [ RunTime:0.000496s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T23:14:52+08:00 ] ::1 ::1 GET /iotstudio/index/index/member.html
+[ log ] localhost/iotstudio/index/index/member.html [运行时间：0.044574s][吞吐率：22.43req/s] [内存消耗：4,376.32kb] [文件加载：53]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'member',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/trends_4.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->member[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\member.html [ array (
+  0 => 'members',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001169s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member` [ RunTime:0.001073s ]
+[ sql ] [ SQL ] SELECT * FROM `member` ORDER BY id desc [ RunTime:0.000589s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T23:14:57+08:00 ] ::1 ::1 GET /iotstudio/index/index/publication.html
+[ log ] localhost/iotstudio/index/index/publication.html [运行时间：0.053706s][吞吐率：18.62req/s] [内存消耗：4,568.61kb] [文件加载：56]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'publication',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/member.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->publication[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\publication.html [ array (
+  0 => 'publications',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010385s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `publication` [ RunTime:0.000984s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `publication` LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT * FROM `publication` ORDER BY id desc LIMIT 0,5 [ RunTime:0.000536s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T23:14:59+08:00 ] ::1 ::1 GET /iotstudio/index/index/course.html
+[ log ] localhost/iotstudio/index/index/course.html [运行时间：0.054398s][吞吐率：18.38req/s] [内存消耗：4,563.34kb] [文件加载：56]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'course',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/publication.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->course[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\course.html [ array (
+  0 => 'courses',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010680s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `course` [ RunTime:0.000873s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1 [ RunTime:0.000912s ]
+[ sql ] [ SQL ] SELECT * FROM `course` ORDER BY id desc LIMIT 0,5 [ RunTime:0.000588s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T23:15:01+08:00 ] ::1 ::1 GET /iotstudio/index/index/index.html
+[ log ] localhost/iotstudio/index/index/index.html [运行时间：0.051977s][吞吐率：19.24req/s] [内存消耗：4,694.27kb] [文件加载：53]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/course.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\index.html [ array (
+  0 => 'trends',
+  1 => 'essays',
+  2 => 'notice',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000969s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trend` [ RunTime:0.001059s ]
+[ sql ] [ SQL ] SELECT * FROM `trend` ORDER BY id desc LIMIT 5 [ RunTime:0.000832s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001560s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `essay` [ RunTime:0.001068s ]
+[ sql ] [ SQL ] SELECT * FROM `essay` ORDER BY id desc LIMIT 5 [ RunTime:0.002451s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000912s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.001437s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` ORDER BY id desc LIMIT 1 [ RunTime:0.000560s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T23:15:07+08:00 ] ::1 ::1 POST /iotstudio/index/index/login.html
+[ log ] localhost/iotstudio/index/index/login.html [运行时间：0.044696s][吞吐率：22.37req/s] [内存消耗：4,419.24kb] [文件加载：55]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '29',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\index\controller\Index->login[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\public\dispatch_jump.html [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001163s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.001023s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `account` = 'admin' LIMIT 1 [ RunTime:0.000475s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T23:15:08+08:00 ] ::1 ::1 GET /iotstudio/index/cms/index.html
+[ log ] localhost/iotstudio/index/cms/index.html [运行时间：0.083692s][吞吐率：11.95req/s] [内存消耗：4,658.90kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/login.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->index[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\index.html [ array (
+  0 => 'admin',
+  1 => 'trends',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000966s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trend` [ RunTime:0.000781s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `trend` LIMIT 1 [ RunTime:0.000903s ]
+[ sql ] [ SQL ] SELECT * FROM `trend` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000879s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T23:15:13+08:00 ] ::1 ::1 GET /iotstudio/index/cms/essay.html
+[ log ] localhost/iotstudio/index/cms/essay.html [运行时间：0.047872s][吞吐率：20.89req/s] [内存消耗：4,910.07kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'essay',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->essay[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\essay.html [ array (
+  0 => 'admin',
+  1 => 'essays',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001377s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `essay` [ RunTime:0.000830s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `essay` LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT * FROM `essay` ORDER BY id desc LIMIT 0,10 [ RunTime:0.002850s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T23:15:14+08:00 ] ::1 ::1 GET /iotstudio/index/cms/course.html
+[ log ] localhost/iotstudio/index/cms/course.html [运行时间：0.048583s][吞吐率：20.58req/s] [内存消耗：4,652.98kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'course',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/essay.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->course[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\course.html [ array (
+  0 => 'admin',
+  1 => 'courses',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001560s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `course` [ RunTime:0.001058s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `course` LIMIT 1 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT * FROM `course` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000573s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T23:15:14+08:00 ] ::1 ::1 GET /iotstudio/index/cms/publication.html
+[ log ] localhost/iotstudio/index/cms/publication.html [运行时间：0.048426s][吞吐率：20.65req/s] [内存消耗：4,658.52kb] [文件加载：57]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cms',
+    2 => 'publication',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/course.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Cms->publication[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Cms.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\cms\publication.html [ array (
+  0 => 'admin',
+  1 => 'publications',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001241s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `publication` [ RunTime:0.001175s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `publication` LIMIT 1 [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT * FROM `publication` ORDER BY id desc LIMIT 0,10 [ RunTime:0.000606s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T23:15:17+08:00 ] ::1 ::1 GET /iotstudio/index/index/logout.html
+[ log ] localhost/iotstudio/index/index/logout.html [运行时间：0.030917s][吞吐率：32.34req/s] [内存消耗：3,149.94kb] [文件加载：48]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'logout',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/cms/publication.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'admin=admin',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->logout[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\public\dispatch_jump.html [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-13T23:15:25+08:00 ] ::1 ::1 GET /iotstudio/index/index/index.html
+[ log ] localhost/iotstudio/index/index/index.html [运行时间：0.066881s][吞吐率：14.95req/s] [内存消耗：4,694.27kb] [文件加载：53]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/logout.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\index.html [ array (
+  0 => 'trends',
+  1 => 'essays',
+  2 => 'notice',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001186s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trend` [ RunTime:0.000951s ]
+[ sql ] [ SQL ] SELECT * FROM `trend` ORDER BY id desc LIMIT 5 [ RunTime:0.000431s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000837s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `essay` [ RunTime:0.000778s ]
+[ sql ] [ SQL ] SELECT * FROM `essay` ORDER BY id desc LIMIT 5 [ RunTime:0.004566s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010529s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.001806s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` ORDER BY id desc LIMIT 1 [ RunTime:0.000424s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T23:15:30+08:00 ] ::1 ::1 GET /iotstudio/index/read/index.html?type=trend&id=37
+[ log ] localhost/iotstudio/index/read/index.html?type=trend&id=37 [运行时间：0.048934s][吞吐率：20.44req/s] [内存消耗：4,820.34kb] [文件加载：55]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'read',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'trend',
+  'id' => '37',
+)
+[ info ] [ RUN ] app\index\controller\Read->index[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Read.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\Index\read.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010449s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trend` [ RunTime:0.001041s ]
+[ sql ] [ SQL ] SELECT * FROM `trend` WHERE  `id` = 37 LIMIT 1 [ RunTime:0.000477s ]
+
+---------------------------------------------------------------
+[ 2017-07-13T23:15:33+08:00 ] ::1 ::1 GET /iotstudio/index/index/member.html
+[ log ] localhost/iotstudio/index/index/member.html [运行时间：0.036049s][吞吐率：27.74req/s] [内存消耗：4,376.45kb] [文件加载：53]
+[ info ] [ LANG ] G:\wamp\wamp64\www\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'member',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/iotstudio/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->member[ G:\wamp\wamp64\www\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\wamp\wamp64\www\iotstudio/application/index\view\index\member.html [ array (
+  0 => 'members',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001005s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `member` [ RunTime:0.001756s ]
+[ sql ] [ SQL ] SELECT * FROM `member` ORDER BY id desc [ RunTime:0.000614s ]
+
+---------------------------------------------------------------

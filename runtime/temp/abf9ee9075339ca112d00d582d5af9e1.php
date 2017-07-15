@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:71:"D:\wamp64\www\project\iotstudio/application/index\view\index\index.html";i:1495202655;s:72:"D:\wamp64\www\project\iotstudio/application/index\view\index\header.html";i:1499919683;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:71:"D:\wamp64\www\project\iotstudio/application/index\view\index\index.html";i:1500133625;s:72:"D:\wamp64\www\project\iotstudio/application/index\view\index\header.html";i:1499919683;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-cn">
 
@@ -44,7 +44,11 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<img src="__IMG__/1.jpg" />
+						<div class="header-txt">
+							<span>物联网工作室</span>
+							<p>Internet of Things Studio</p>
+						</div>
+						<img src="__IMG__/1.png" />
 					</div>
 
 				</div>
@@ -159,9 +163,10 @@
 					</main>
 					<aside class="sidebar col-md-4 ">
 						<div class="notice">
-							<h4><?php echo $notice['name']; ?></h4>
+							<h4>公告栏</h4>
+							<h3 style="text-align: center;"><?php echo $notice['name']; ?><h3>
 							<div class="notice-txt" id="show">
-								<?php echo $notice['text']; ?>
+								<p><?php echo $notice['text']; ?><p>
 							</div>
 						</div>
 						<div class="connect">
@@ -170,7 +175,7 @@
 								<p>TEL：18181818112
 									<p>
 										<p>QQ:123124112</p>
-										<p>姓名：张先生</p>
+										<p>指导老师：张德军</p>
 							</div>
 						</div>
 					</aside>
