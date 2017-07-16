@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:68:"G:\wamp\wamp64\www\iotstudio/application/index\view\index\index.html";i:1500111447;s:69:"G:\wamp\wamp64\www\iotstudio/application/index\view\index\header.html";i:1499919683;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:68:"G:\wamp\wamp64\www\iotstudio/application/index\view\index\index.html";i:1500133625;s:69:"G:\wamp\wamp64\www\iotstudio/application/index\view\index\header.html";i:1499919683;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-cn">
 
@@ -163,9 +163,9 @@
 					</main>
 					<aside class="sidebar col-md-4 ">
 						<div class="notice">
-							<h4>公告</h4>
+							<h4>公告栏</h4>
+							<h3 style="text-align: center;"><?php echo $notice['name']; ?><h3>
 							<div class="notice-txt" id="show">
-								<h3><?php echo $notice['name']; ?><h3>
 								<p><?php echo $notice['text']; ?><p>
 							</div>
 						</div>
@@ -175,7 +175,7 @@
 								<p>TEL：18181818112
 									<p>
 										<p>QQ:123124112</p>
-										<p>姓名：张先生</p>
+										<p>指导老师：张德军</p>
 							</div>
 						</div>
 					</aside>

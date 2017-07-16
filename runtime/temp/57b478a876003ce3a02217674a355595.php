@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:67:"G:\wamp\wamp64\www\iotstudio/application/index\view\cms\course.html";i:1495196782;s:67:"G:\wamp\wamp64\www\iotstudio/application/index\view\cms\header.html";i:1495203267;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:67:"G:\wamp\wamp64\www\iotstudio/application/index\view\cms\course.html";i:1500169941;s:67:"G:\wamp\wamp64\www\iotstudio/application/index\view\cms\header.html";i:1495203267;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -70,7 +70,7 @@
                 <div class="panel-heading">
                     所有课程
                 </div>
-                <div class="panel panel-default table-responsive">
+                <div class="panel panel-default">
                     <table class="table table-hover">
                         <thead>
                         <tr>

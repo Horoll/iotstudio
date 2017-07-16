@@ -42,9 +42,9 @@
 						{foreach $publications as $publication}
 						<article class="main-article">
 							{if condition="$publication.pic_dir neq null"}
-							<img class="pub-img" src="__PUBLICATION__/{$publication.pic_dir}" style="width:350px;"/>
+							<img class="pub-img" src="__PUBLICATION__/{$publication.pic_dir}" style="width:100%;"/>
 							{else /}
-							<img class="pub-img" src="__IMG__/publication.jpg" style="width:350px;"/>
+							<img class="pub-img" src="__IMG__/publication.jpg" style="width:100%;"/>
 							{/if}
 							<div class="pub-text">
 								<div class="pub-title">

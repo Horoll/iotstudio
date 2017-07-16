@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:70:"D:\wamp64\www\project\iotstudio/application/index\view\Index\read.html";i:1499943564;s:72:"D:\wamp64\www\project\iotstudio/application/index\view\index\header.html";i:1499919683;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:70:"D:\wamp64\www\project\iotstudio/application/index\view\Index\read.html";i:1500173028;s:72:"D:\wamp64\www\project\iotstudio/application/index\view\index\header.html";i:1499919683;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-cn">
 
@@ -77,7 +77,7 @@
 								<?php 
 									if($file_dir!=null){
 										if($_GET['type']=='member'){
-											echo '<img src="__MEMBER__/'.$file_dir.'" style="width:160px">';
+											echo '<img class="pic" src="__MEMBER__/'.$file_dir.'">';
 										}else{
 											echo '<p>资源下载：</p>';
 											echo '<a href="'.url('Index/download').'?file_name='.$data['file_name'].'&file_dir='.$_GET['type'].'/'.$data['file_dir'].'">'.$data['file_name'].'</a>';
@@ -88,9 +88,9 @@
 								<?php 
 									if($_GET['type']=='publication'){
 										if($pic_dir!=null){
-											echo '<img src="__PUBLICATION__/'.$pic_dir.'" style="width:500px">';
+											echo '<img class="pic" src="__PUBLICATION__/'.$pic_dir.'">';
 										}else{
-											echo '<img src="__IMG__/publication.jpg" style="width:500px">';
+											echo '<img class="pic" src="__IMG__/publication.jpg">';
 										}
 									echo '<br/><br/>';
 									}

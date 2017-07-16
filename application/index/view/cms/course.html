@@ -38,12 +38,12 @@
                     <table class="table table-hover">
                         <thead>
                         <tr>
-                            <th>编号</th>
-                            <th>名称</th>
-                            <th>简介</th>
-                            <th>查看</th>
-                            <th>修改</th>
-                            <th>删除</th>
+                            <th id="th1">编号</th>
+                            <th id="th2">名称</th>
+                            <th id="th3">简介</th>
+                            <th id="th4">查看</th>
+                            <th id="th5">修改</th>
+                            <th id="th6">删除</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -55,8 +55,12 @@
                                         }elseif($name == 'file_name'){
                                             continue;
                                         }
+                                        if($name == 'text'){?>
+                                            <td class="text-cell">{$cell}</td>
+                                        <?php }else{?>
+                                            <td>{$cell}</td>
+                                        <?php }
                                  ?>
-                                <td>{$cell}</td>
                                 {/foreach}
                                 <td>
                                     <a href="{:url('Read/index').'?type=course&id='.$course['id']}" class="table-btn"><span class="glyphicon glyphicon-eye-open"></span></a>

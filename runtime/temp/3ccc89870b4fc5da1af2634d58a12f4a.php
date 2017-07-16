@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:77:"D:\wamp64\www\project\iotstudio/application/index\view\index\publication.html";i:1500118042;s:72:"D:\wamp64\www\project\iotstudio/application/index\view\index\header.html";i:1499919683;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:77:"D:\wamp64\www\project\iotstudio/application/index\view\index\publication.html";i:1500172167;s:72:"D:\wamp64\www\project\iotstudio/application/index\view\index\header.html";i:1499919683;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -84,9 +84,9 @@
 						<?php foreach($publications as $publication): ?>
 						<article class="main-article">
 							<?php if($publication['pic_dir'] != null): ?>
-							<img class="pub-img" src="__PUBLICATION__/<?php echo $publication['pic_dir']; ?>" style="width:350px;"/>
+							<img class="pub-img" src="__PUBLICATION__/<?php echo $publication['pic_dir']; ?>" style="width:100%;"/>
 							<?php else: ?>
-							<img class="pub-img" src="__IMG__/publication.jpg" style="width:350px;"/>
+							<img class="pub-img" src="__IMG__/publication.jpg" style="width:100%;"/>
 							<?php endif; ?>
 							<div class="pub-text">
 								<div class="pub-title">

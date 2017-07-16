@@ -4,6 +4,7 @@ body {
 	line-height: 1.75em;
 	background: #000000;
 	font-family: "微软雅黑";
+	word-break:hyphenate;
 }
 
 *{
@@ -42,5 +43,32 @@ ul.pagination{
 	margin-top: 75px;
 	color: white;
 	text-align: center;
-
+}
+@media (min-width:768px) {
+	table{
+		table-layout:fixed;
+	}
+	#th1{
+		width: 5%;
+	}
+	#th2{
+		width: 15%;
+	}
+	#th3{
+		width: 65%;
+	}
+	#th4{
+		width: 5%;
+	}
+	#th5{
+		width: 5%;
+	}
+	#th6{
+		width: 5%;
+	}
+}
+.text-cell{
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
 }

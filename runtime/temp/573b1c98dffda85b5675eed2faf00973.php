@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:72:"G:\wamp\wamp64\www\iotstudio/application/index\view\cms\publication.html";i:1499939920;s:67:"G:\wamp\wamp64\www\iotstudio/application/index\view\cms\header.html";i:1495203267;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:72:"G:\wamp\wamp64\www\iotstudio/application/index\view\cms\publication.html";i:1500170108;s:67:"G:\wamp\wamp64\www\iotstudio/application/index\view\cms\header.html";i:1495203267;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -70,7 +70,7 @@
                 <div class="panel-heading">
                     所有发表
                 </div>
-                <div class="panel panel-default table-responsive">
+                <div class="panel panel-default">
                     <table class="table table-hover">
                         <thead>
                         <tr>

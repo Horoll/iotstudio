@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:67:"G:\wamp\wamp64\www\iotstudio/application/index\view\cms\notice.html";i:1494169479;s:67:"G:\wamp\wamp64\www\iotstudio/application/index\view\cms\header.html";i:1495203267;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:67:"G:\wamp\wamp64\www\iotstudio/application/index\view\cms\notice.html";i:1500169986;s:67:"G:\wamp\wamp64\www\iotstudio/application/index\view\cms\header.html";i:1495203267;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -70,7 +70,7 @@
                 <div class="panel-heading">
                     所有公告
                 </div>
-                <div class="panel panel-default table-responsive">
+                <div class="panel panel-default">
                     <table class="table table-hover">
                         <thead>
                         <tr>

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:70:"D:\wamp64\www\project\iotstudio/application/index\view\cms\member.html";i:1495196821;s:70:"D:\wamp64\www\project\iotstudio/application/index\view\cms\header.html";i:1495203267;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:70:"D:\wamp64\www\project\iotstudio/application/index\view\cms\member.html";i:1500175801;s:70:"D:\wamp64\www\project\iotstudio/application/index\view\cms\header.html";i:1495203267;}*/ ?>
 <!DOCTYPE html>
 <html>
 
@@ -70,16 +70,16 @@
                 <div class="panel-heading">
                     所有成员
                 </div>
-                <div class="panel panel-default table-responsive">
+                <div class="panel panel-default  table-responsive">
                     <table class="table table-hover">
                         <thead>
                         <tr>
-                            <th>编号</th>
-                            <th>名称</th>
-                            <th>简介</th>
-                            <th>查看</th>
-                            <th>修改</th>
-                            <th>删除</th>
+                            <th id="th1">编号</th>
+                            <th id="th2">名称</th>
+                            <th id="th3">简介</th>
+                            <th id="th4">查看</th>
+                            <th id="th5">修改</th>
+                            <th id="th6">删除</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -90,9 +90,12 @@
                                         }elseif($name == 'file_name'){
                                             continue;
                                         }
-                                 ?>
-                                <td><?php echo $cell; ?></td>
-                                <?php endforeach; ?>
+                                        if($name == 'text'){?>
+                                        <td class="text-cell"><?php echo $cell; ?></td>
+                                        <?php }else{?>
+                                        <td><?php echo $cell; ?></td>
+                                        <?php }
+                                 endforeach; ?>
                                 <td>
                                     <a href="<?php echo url('Read/index').'?type=member&id='.$member['id']; ?>" class="table-btn"><span class="glyphicon glyphicon-eye-open"></span></a>
                                 </td>
