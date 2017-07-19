@@ -2,8 +2,13 @@ html,
 body {
 	color: #505050;
 	line-height: 1.75em;
-	background: #000000;
+	background:-webkit-gradient(linear, 0 0, 0 100%, from(#A1CDE1), to(#0C4761));
 	font-family: "微软雅黑";
+}
+
+
+a:hover{
+	text-decoration: none;
 }
 
 * {
@@ -12,11 +17,33 @@ body {
 }
 .main-header {
 	text-align: center;
-	background: #000000;
+	 background: linear-gradient(to right,rgb(84,84,86) , #000); 
+}
+
+.header-txt{
+	float: left;
+	clear: all;
+	margin-top: 100px;
+}
+
+.header-txt span{
+	color: white;
+	font-size: 30px;
+	font-family: "楷体";
+	box-shadow: 2px 5px 15px white;
+}
+
+.header-txt p{
+	color: white;
+	font-size: 20px;
+	margin-left: 150px;
+	box-shadow: 2px 5px 15px white;
 }
 
 .main-header img {
 	max-width: 100%;
+	float: right;
+	clear: all;
 }
 
 .main-navigation {
@@ -55,12 +82,18 @@ body {
 	display: block;
 	padding: 0 30px;
 }
+
+.main-navigation .menu li a:hover{
+	color: paleturquoise;
+}
+
+
 .foot {
 	background: #000000;
 	margin-top: 20px;
 	color: white;
 	text-align: center;
-	border-top: 1px solid white;
+	
 }
 
 .trends {
@@ -72,8 +105,8 @@ body {
 }
 
 .trends h2 {
-	border-bottom: 1px solid lightsalmon;
-	color: lightsalmon;
+	border-bottom: 1px solid #5DA4BE;
+	color:#5DA4BE;
 	font-weight: 700;
 	padding: 10px 0;
 	margin: 10px;
@@ -86,8 +119,8 @@ body {
 }
 
 button{
-	border: 1px solid lightsalmon;
-	background: lightsalmon;
+	border: 1px solid #0C4761;
+	background: #0C4761;
 	border-radius:5px ;
 	color: #FFFFFF;
 	padding: 5px 10px;
@@ -96,7 +129,7 @@ button{
 
 .but2{
 	float: right;
-	clear: both;
+	clear: all;
 }
 
 p{
@@ -114,8 +147,8 @@ h4{
 }
 
 .back h4{
-	border-bottom: 1px solid lightsalmon;
-	color: lightsalmon;
+	border-bottom: 1px solid #5DA4BE;
+	color: #5DA4BE;
 	font-weight: 700;
 	padding: 10px 0;
 	margin: 10px;
@@ -138,20 +171,36 @@ h4{
 .search{
 	margin-top: 35px;
 }
+
+.new-tag{
+	margin-left: 8px;
+}
 /* 小屏幕（平板，大于等于 768px） */
 @media (max-width: 768px) {
 	.pic{
 		width: 100%;
+	}
+	#show img{
+		width: 100%;	
+		height: auto;
 	}
 }
 @media (min-width: 768px) and (max-width: 992px) {
 	.pic{
 		width: 100%;
 	}
+	#show img{
+		width: 100%;	
+		eight: auto;
+	}
 }
 @media (min-width: 992px) and (max-width: 1200px) {
 	.pic{
-	width: 75%;
+		width: 75%;
+	}
+	#show img{
+		width: 75%;	
+		eight: auto;
 	}
 }
 
@@ -160,4 +209,7 @@ h4{
 	.pic{
 		width:60%;
 	}
+/*	#show img{
+		width: 100%;	
+	}*/
 }

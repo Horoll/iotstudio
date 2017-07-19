@@ -4,12 +4,27 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>详细页面</title>
+		<title>物联网工作室详细页面</title>
 		<link rel="stylesheet" href="__CSS__/bootstrap.min.css" />
 		<link href="__CSS__/read.css" rel="stylesheet" />
 	</head>
 
 	<body>
+		
+		<header class="main-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="header-txt">
+							<span>物联网工作室</span>
+							<p>Internet of Things Studio</p>
+						</div>
+						<img src="__IMG__/1.png" />
+					</div>
+
+				</div>
+			</div>
+		</header>
 	<!--包含inedx头部-->
 	{include file="index/header" /}
 		<section class="content-wrap">
@@ -56,6 +71,16 @@
 								<div class="new-txt" id="show">
 									{$data.text}
 								</div>
+							</div>
+							<div class="new-tag">
+									<span>标签：</span>
+									<a>demo</a><span>,</span>
+									<a>设计</a><span>,</span>
+									<a>汇编</a>
+							</div>
+							<div class="new-post">
+									<button type="button" class="but1">上一篇</button>
+									<button type="button" class="but2">下一篇</button>
 							</div>
 						</article>
 					</main>
