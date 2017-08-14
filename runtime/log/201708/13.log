@@ -1,0 +1,45 @@
+[ 2017-08-13T13:18:19+08:00 ] ::1 ::1 GET /project/iotstudio/
+[ log ] localhost/project/iotstudio/ [运行时间：2.687100s][吞吐率：0.37req/s] [内存消耗：3,672.71kb] [文件加载：53]
+[ info ] [ LANG ] D:\wamp64\www\project\iotstudio\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Phpstorm-5547fa09=783ade7a-de49-4ae0-b7a2-0e4ea33c1bea; Phpstorm-bd2926e8=857be1c2-e28b-476d-b13e-3a6d848fae47; pgv_pvi=2761342976; _ga=GA1.1.1437015703.1490101787',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\wamp64\www\project\iotstudio\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp64\www\project\iotstudio/application/index\view\index\index.html [ array (
+  0 => 'trends',
+  1 => 'essays',
+  2 => 'notice',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.092369s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trend` [ RunTime:0.314151s ]
+[ sql ] [ SQL ] SELECT * FROM `trend` ORDER BY id desc LIMIT 5 [ RunTime:0.045450s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006534s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `essay` [ RunTime:0.087202s ]
+[ sql ] [ SQL ] SELECT * FROM `essay` ORDER BY id desc LIMIT 5 [ RunTime:0.002741s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005121s ] mysql:dbname=iotstudio;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.035704s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` ORDER BY id desc LIMIT 1 [ RunTime:0.000481s ]
+
+---------------------------------------------------------------

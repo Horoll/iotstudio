@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:70:"D:\wamp64\www\project\iotstudio/application/index\view\Index\read.html";i:1500448425;s:72:"D:\wamp64\www\project\iotstudio/application/index\view\index\header.html";i:1499919683;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:70:"D:\wamp64\www\project\iotstudio/application/index\view\Index\read.html";i:1500523974;s:72:"D:\wamp64\www\project\iotstudio/application/index\view\index\header.html";i:1499919683;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-cn">
 
@@ -114,15 +114,15 @@
 									<?php echo $data['text']; ?>
 								</div>
 							</div>
-							<div class="new-tag">
-									<span>标签：</span>
-									<a>demo</a><span>,</span>
-									<a>设计</a><span>,</span>
-									<a>汇编</a>
-							</div>
+							<!--<div class="new-tag">-->
+									<!--<span>标签：</span>-->
+									<!--<a>demo</a><span>,</span>-->
+									<!--<a>设计</a><span>,</span>-->
+									<!--<a>汇编</a>-->
+							<!--</div>-->
 							<div class="new-post">
-									<button type="button" class="but1">上一篇</button>
-									<button type="button" class="but2">下一篇</button>
+									<button type="button" class="but1">上一篇：<?php echo $pervious['name']; ?></button>
+									<button type="button" class="but2">下一篇：<?php echo $next['name']; ?></button>
 							</div>
 						</article>
 					</main>

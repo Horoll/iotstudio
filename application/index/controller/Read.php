@@ -22,7 +22,14 @@ class Read extends Controller
             if($result==null){
                 $this->error('id不存在');
             }
+            $pervious = $table->where('id','<',input('id'))->find();
+            $next = $table->where('id','>',input('id'))->find();
+            //var_dump($pervious);
+            //var_dump($next);
+            //var_dump($result);
             $this->assign('data',$result);
+            $this->assign('pervious',$pervious);
+            $this->assign('next',$next);
             return $this->fetch('Index/read');
         }else{
             $this->error('非法访问');
